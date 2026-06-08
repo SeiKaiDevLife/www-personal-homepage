@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeiKai</title>
+    <style>
+        /* 现代极简暗黑风格 */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 4.5rem;
+            font-weight: 200;
+            letter-spacing: 0.6rem;
+            margin: 0;
+            /* 渐变色文字 */
+            background: linear-gradient(45deg, #ffffff 30%, #a0a0a0 90%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeIn 1.5s ease-out;
+        }
+        p {
+            color: #555555;
+            font-size: 0.9rem;
+            letter-spacing: 0.3rem;
+            margin-top: 20px;
+            text-transform: uppercase;
+            animation: fadeIn 2.5s ease-out;
+        }
+        /* 微动画 */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SeiKai</h1>
+        <p>Photography Portfolio</p>
+    </div>
+</body>
+</html>
