@@ -8,18 +8,22 @@
     <!-- 引入 Vue 3 CDN -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     <!-- 引入高级字体 -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Noto+Sans+SC:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="app" v-cloak>
-        <header>
-            <div class="logo">SEIKAI</div>
-            <nav>
-                <div class="nav-item" :class="{active: filter==='all'}" @click="filter='all'">ALL</div>
-                <div class="nav-item" :class="{active: filter==='landscape'}" @click="filter='landscape'">LANDSCAPE</div>
-                <div class="nav-item" :class="{active: filter==='girlfriend'}" @click="filter='girlfriend'">PORTRAITS</div>
-            </nav>
-        </header>
+        
+        <!-- 炫酷开屏居中 Logo -->
+        <div class="hero">
+            <h1 class="hero-title">SeiKai</h1>
+            <p class="hero-subtitle">Photography Collection</p>
+        </div>
+
+        <!-- 居中悬浮导航栏 (移除 All 选项) -->
+        <nav class="sticky-nav">
+            <div class="nav-item" :class="{active: filter==='landscape'}" @click="filter='landscape'">LANDSCAPE</div>
+            <div class="nav-item" :class="{active: filter==='girlfriend'}" @click="filter='girlfriend'">PORTRAITS</div>
+        </nav>
 
         <main>
             <!-- 沉浸式组图专属浏览页 (单列排布) -->
@@ -40,7 +44,7 @@
                 </div>
             </div>
 
-            <!-- 首页主瀑布流 (混合风景与组图时间轴) -->
+            <!-- 首页主瀑布流 (动态渲染风景或写真) -->
             <div class="feed" v-else>
                 <template v-for="(block, bIdx) in groupedFeed" :key="bIdx">
                     
