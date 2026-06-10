@@ -3,60 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SeiKai</title>
-    <style>
-        /* 现代极简暗黑风格 */
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #0a0a0a;
-            color: #ffffff;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            font-size: 4.5rem;
-            font-weight: 200;
-            letter-spacing: 0.6rem;
-            margin: 0;
-            /* 渐变色文字 */
-            background: linear-gradient(45deg, #ffffff 30%, #a0a0a0 90%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: fadeIn 1.5s ease-out;
-        }
-        p {
-            color: #555555;
-            font-size: 0.9rem;
-            letter-spacing: 0.3rem;
-            margin-top: 20px;
-            text-transform: uppercase;
-            animation: fadeIn 2.5s ease-out;
-        }
-        /* 微动画 */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    <title>SeiKai | Photography</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- 引入 Vue 3 CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <!-- 引入高级字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Noto+Sans+SC:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>SeiKai</h1>
-        <p>Photography Portfolio</p>
+    <div id="app" v-cloak>
+        <header>
+            <div class="logo">SEIKAI</div>
+            <nav>
+                <div class="nav-item" :class="{active: filter==='all'}" @click="filter='all'">ALL</div>
+                <div class="nav-item" :class="{active: filter==='landscape'}" @click="filter='landscape'">LANDSCAPE</div>
+                <div class="nav-item" :class="{active: filter==='girlfriend'}" @click="filter='girlfriend'">PORTRAITS</div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- 沉浸式组图专属浏览页 (单列排布) -->
+            <div class="dedicated-gallery" v-if="activeGallery">
+                <div class="back-nav" @click="closeGallery">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    <span>返回主页</span>
+                </div>
+                <div class="gallery-header">
+                    <h1>{{ activeGallery.title }}</h1>
+                    <p>{{ itemDateFormatter(activeGallery.date) }} · {{ activeGallery.location }}</p>
+                </div>
+                <div class="gallery-full-list">
+                    <img v-for="(img, idx) in activeGalleryAllImages" :key="idx" :src="img" loading="lazy">
+                </div>
+            </div>
+
+            <!-- 首页主瀑布流 (混合风景与组图时间轴) -->
+            <div class="feed" v-else>
+                <template v-for="(block, bIdx) in groupedFeed" :key="bIdx">
+                    
+                    <!-- 风景照：无字纯净版瀑布流 -->
+                    <div class="masonry-container" v-if="block.type === 'masonry'">
+                        <div class="masonry-item" v-for="item in block.items" :key="item.id" @click="openLightbox(item.display, item)">
+                            <img :src="item.thumbnail" loading="lazy" alt="landscape">
+                        </div>
+                    </div>
+
+                    <!-- 写真组图：时间轴 + 1+5 高级栅格排版 -->
+                    <div class="timeline-row" v-if="block.type === 'gallery'">
+                        <div class="timeline-info">
+                            <div class="t-date">{{ itemDateFormatter(block.item.date) }}</div>
+                            <div class="t-title">{{ block.item.title }}</div>
+                            <div class="t-loc">{{ block.item.location }}</div>
+                        </div>
+                        <div class="timeline-grid">
+                            <!-- 超大封面图 (2x2) -->
+                            <div class="grid-item cover" @click="openLightbox(block.item.layout.cover.display, block.item)" v-if="block.item.layout.cover">
+                                <img :src="block.item.layout.cover.thumbnail" loading="lazy">
+                            </div>
+                            
+                            <!-- 小方格 1 到 5 -->
+                            <template v-for="i in 5" :key="i">
+                                <div class="grid-item" 
+                                     v-if="block.item.layout['grid_' + i]"
+                                     @click="i === 5 && block.item.others && block.item.others.length > 0 ? openGallery(block.item) : openLightbox(block.item.layout['grid_' + i].display, block.item)">
+                                    <img :src="block.item.layout['grid_' + i].thumbnail" loading="lazy">
+                                    
+                                    <!-- 第5格上的毛玻璃蒙层 (+N) -->
+                                    <div class="blur-overlay" v-if="i === 5 && block.item.others && block.item.others.length > 0">
+                                        +{{ block.item.others.length + 1 }}
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+
+                </template>
+            </div>
+        </main>
+
+        <!-- 全屏深色灯箱 (Lightbox) -->
+        <div class="lightbox" v-if="lightbox.isOpen" @click="closeLightbox">
+            <div class="lightbox-close">×</div>
+            <img :src="lightbox.url" @click.stop>
+            <div class="lightbox-caption" v-if="lightbox.item">
+                {{ lightbox.item.title }} | {{ lightbox.item.date }} | {{ lightbox.item.location }}
+            </div>
+        </div>
     </div>
+    
+    <script src="app.js"></script>
 </body>
 </html>

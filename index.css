@@ -1,0 +1,248 @@
+:root {
+    --bg: #0a0a0a;
+    --text: #f5f5f5;
+    --text-muted: #777;
+    --accent: #ffffff;
+}
+
+[v-cloak] { display: none; }
+
+body, html {
+    margin: 0; 
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Outfit', 'Noto Sans SC', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+/* ================= 头部导航 ================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    position: sticky;
+    top: 0;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+nav {
+    display: flex;
+    gap: 30px;
+}
+.nav-item {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.nav-item:hover, .nav-item.active {
+    color: var(--accent);
+}
+
+main {
+    padding: 0 5% 100px;
+}
+
+/* ================= 风景：瀑布流展示区 ================= */
+.masonry-container {
+    columns: 4 300px;
+    column-gap: 20px;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    cursor: zoom-in;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.masonry-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.masonry-item:hover img {
+    transform: scale(1.03);
+}
+
+/* ================= 写真：时间轴与 1+5 网格 ================= */
+.timeline-row {
+    display: flex;
+    gap: 60px;
+    margin: 100px 0;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+.timeline-row:first-child {
+    border-top: none;
+    margin-top: 40px;
+}
+.timeline-info {
+    flex: 0 0 220px;
+    position: sticky;
+    top: 120px;
+    height: fit-content;
+}
+.t-date {
+    font-size: 13px;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    font-weight: 300;
+}
+.t-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+.t-loc {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.timeline-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    max-width: 900px;
+}
+.grid-item {
+    position: relative;
+    cursor: zoom-in;
+    border-radius: 4px;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.grid-item:hover img {
+    transform: scale(1.04);
+}
+
+/* 核心：1+5 合并布局逻辑 */
+.grid-item.cover {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+.blur-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.blur-overlay:hover {
+    background: rgba(0,0,0,0.2);
+}
+
+/* ================= 组图沉浸式专属页 ================= */
+.dedicated-gallery {
+    max-width: 800px;
+    margin: 40px auto 0;
+    animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.back-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-muted);
+    cursor: pointer;
+    margin-bottom: 60px;
+    transition: color 0.3s;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.back-nav:hover { color: var(--accent); }
+.gallery-header { margin-bottom: 80px; text-align: center; }
+.gallery-header h1 { font-size: 40px; margin: 0 0 16px; font-weight: 600; }
+.gallery-header p { color: var(--text-muted); margin: 0; letter-spacing: 1px; font-weight: 300;}
+
+.gallery-full-list img {
+    width: 100%;
+    margin-bottom: 40px;
+    display: block;
+    border-radius: 4px;
+}
+
+/* ================= 全屏灯箱 (Lightbox) ================= */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(5,5,5,0.98);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+    animation: fadeIn 0.3s ease;
+}
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+.lightbox-close:hover { opacity: 1; }
+.lightbox img {
+    max-width: 90vw;
+    max-height: 80vh;
+    object-fit: contain;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+.lightbox-caption {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+/* ================= 移动端响应式 ================= */
+@media (max-width: 768px) {
+    .timeline-row { flex-direction: column; gap: 24px; margin: 60px 0; }
+    .timeline-info { position: static; }
+    .timeline-grid { gap: 4px; }
+    .masonry-container { columns: 2 150px; column-gap: 8px; }
+    header { padding: 20px 5%; flex-direction: column; gap: 16px; }
+    nav { gap: 20px; }
+    .gallery-header h1 { font-size: 32px; }
+    .lightbox img { max-width: 100vw; }
+}
