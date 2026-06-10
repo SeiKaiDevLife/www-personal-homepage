@@ -26,7 +26,6 @@ body, html {
     justify-content: center;
     align-items: center;
     text-align: center;
-    animation: fadeInDown 1.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .hero::before {
     content: '';
@@ -36,21 +35,16 @@ body, html {
     background-image: url('public/hero-bg.webp');
     background-size: cover;
     background-position: center 30%;
-    /* 核心需求：上半部分完全可见，从中间开始渐渐透明，底部完全不可见 */
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    background-repeat: no-repeat;
 }
 .hero::after {
     content: '';
     position: absolute;
     inset: 0;
     z-index: -1;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, var(--bg) 100%);
+    /* 使用稳定的叠加层替代 Mask 技术，解决滚动消失 Bug */
+    background: linear-gradient(to bottom, rgba(10,10,10,0.2) 0%, rgba(10,10,10,0.2) 50%, var(--bg) 100%);
     pointer-events: none;
-}
-@keyframes fadeInDown {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
 }
 .hero-title {
     font-size: 64px;
