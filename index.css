@@ -100,9 +100,10 @@ main {
 
 /* ================= 风景：瀑布流展示区 ================= */
 .masonry-container {
-    columns: 4 300px;
-    column-gap: 20px;
+    columns: auto 220px;
+    column-gap: 16px;
     margin-bottom: 80px;
+    width: 100%;
 }
 .masonry-item {
     break-inside: avoid;
@@ -125,13 +126,14 @@ main {
 .timeline-row {
     display: flex;
     gap: 60px;
-    margin: 80px 0;
+    margin: 80px auto;
+    max-width: 1000px;
     padding-top: 40px;
     border-top: 1px solid rgba(255,255,255,0.05);
 }
 .timeline-row:first-child {
     border-top: none;
-    margin-top: 20px;
+    margin: 40px auto 80px auto;
     padding-top: 0;
 }
 .timeline-info {
