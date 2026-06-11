@@ -1,0 +1,15 @@
+[
+  {
+    "id": "land-2019-06-01-白-1",
+    "type": "single",
+    "title": "白",
+    "date": "2019-06-01",
+    "location": "杭州",
+    "category": "L",
+    "tags": [
+      "抽象"
+    ],
+    "thumbnail": "public/gallery/landscape/19-06/2019-06-01 白/thumbnails/1.webp",
+    "display": "public/gallery/landscape/19-06/2019-06-01 白/display/1.webp"
+  }
+]

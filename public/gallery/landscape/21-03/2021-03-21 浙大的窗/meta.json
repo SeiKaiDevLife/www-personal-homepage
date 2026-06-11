@@ -1,0 +1,30 @@
+[
+  {
+    "id": "land-2021-03-21-浙大的窗-1",
+    "type": "single",
+    "title": "浙大的窗",
+    "date": "2021-03-21",
+    "location": "杭州",
+    "category": "L",
+    "tags": [
+      "城市",
+      "街景"
+    ],
+    "thumbnail": "public/gallery/landscape/21-03/2021-03-21 浙大的窗/thumbnails/1.webp",
+    "display": "public/gallery/landscape/21-03/2021-03-21 浙大的窗/display/1.webp"
+  },
+  {
+    "id": "land-2021-03-21-浙大的窗-2",
+    "type": "single",
+    "title": "浙大的窗",
+    "date": "2021-03-21",
+    "location": "杭州",
+    "category": "L",
+    "tags": [
+      "城市",
+      "街景"
+    ],
+    "thumbnail": "public/gallery/landscape/21-03/2021-03-21 浙大的窗/thumbnails/2.webp",
+    "display": "public/gallery/landscape/21-03/2021-03-21 浙大的窗/display/2.webp"
+  }
+]
