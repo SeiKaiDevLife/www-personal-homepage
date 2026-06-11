@@ -1,0 +1,43 @@
+{
+  "id": "port-2025-09-14-青山湖",
+  "type": "gallery",
+  "title": "青山湖",
+  "date": "2025-09-14",
+  "location": "杭州",
+  "category": "P",
+  "tags": [
+    "唯美"
+  ],
+  "layout": {
+    "cover": {
+      "thumbnail": "public/gallery/portrait/25-09/2025-09-14 青山湖/thumbnails/cover.webp",
+      "display": "public/gallery/portrait/25-09/2025-09-14 青山湖/display/cover.webp"
+    },
+    "grid_1": {
+      "thumbnail": "public/gallery/portrait/25-09/2025-09-14 青山湖/thumbnails/1.webp",
+      "display": "public/gallery/portrait/25-09/2025-09-14 青山湖/display/1.webp"
+    },
+    "grid_2": {
+      "thumbnail": "public/gallery/portrait/25-09/2025-09-14 青山湖/thumbnails/2.webp",
+      "display": "public/gallery/portrait/25-09/2025-09-14 青山湖/display/2.webp"
+    },
+    "grid_3": {
+      "thumbnail": "public/gallery/portrait/25-09/2025-09-14 青山湖/thumbnails/3.webp",
+      "display": "public/gallery/portrait/25-09/2025-09-14 青山湖/display/3.webp"
+    },
+    "grid_4": {
+      "thumbnail": "public/gallery/portrait/25-09/2025-09-14 青山湖/thumbnails/4.webp",
+      "display": "public/gallery/portrait/25-09/2025-09-14 青山湖/display/4.webp"
+    },
+    "grid_5": {
+      "thumbnail": "public/gallery/portrait/25-09/2025-09-14 青山湖/thumbnails/5.webp",
+      "display": "public/gallery/portrait/25-09/2025-09-14 青山湖/display/5.webp"
+    }
+  },
+  "others": [
+    {
+      "thumbnail": "public/gallery/portrait/25-09/2025-09-14 青山湖/thumbnails/6.webp",
+      "display": "public/gallery/portrait/25-09/2025-09-14 青山湖/display/6.webp"
+    }
+  ]
+}

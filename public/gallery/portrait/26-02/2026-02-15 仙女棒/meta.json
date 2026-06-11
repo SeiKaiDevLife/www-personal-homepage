@@ -1,0 +1,43 @@
+{
+  "id": "port-2026-02-15-仙女棒",
+  "type": "gallery",
+  "title": "仙女棒",
+  "date": "2026-02-15",
+  "location": "宣城",
+  "category": "P",
+  "tags": [
+    "唯美"
+  ],
+  "layout": {
+    "cover": {
+      "thumbnail": "public/gallery/portrait/26-02/2026-02-15 仙女棒/thumbnails/cover.webp",
+      "display": "public/gallery/portrait/26-02/2026-02-15 仙女棒/display/cover.webp"
+    },
+    "grid_1": {
+      "thumbnail": "public/gallery/portrait/26-02/2026-02-15 仙女棒/thumbnails/1.webp",
+      "display": "public/gallery/portrait/26-02/2026-02-15 仙女棒/display/1.webp"
+    },
+    "grid_2": {
+      "thumbnail": "public/gallery/portrait/26-02/2026-02-15 仙女棒/thumbnails/2.webp",
+      "display": "public/gallery/portrait/26-02/2026-02-15 仙女棒/display/2.webp"
+    },
+    "grid_3": {
+      "thumbnail": "public/gallery/portrait/26-02/2026-02-15 仙女棒/thumbnails/3.webp",
+      "display": "public/gallery/portrait/26-02/2026-02-15 仙女棒/display/3.webp"
+    },
+    "grid_4": {
+      "thumbnail": "public/gallery/portrait/26-02/2026-02-15 仙女棒/thumbnails/4.webp",
+      "display": "public/gallery/portrait/26-02/2026-02-15 仙女棒/display/4.webp"
+    },
+    "grid_5": {
+      "thumbnail": "public/gallery/portrait/26-02/2026-02-15 仙女棒/thumbnails/5.webp",
+      "display": "public/gallery/portrait/26-02/2026-02-15 仙女棒/display/5.webp"
+    }
+  },
+  "others": [
+    {
+      "thumbnail": "public/gallery/portrait/26-02/2026-02-15 仙女棒/thumbnails/6.webp",
+      "display": "public/gallery/portrait/26-02/2026-02-15 仙女棒/display/6.webp"
+    }
+  ]
+}

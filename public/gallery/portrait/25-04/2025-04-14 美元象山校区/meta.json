@@ -1,0 +1,38 @@
+{
+  "id": "port-2025-04-14-美元象山校区",
+  "type": "gallery",
+  "title": "美元象山校区",
+  "date": "2025-04-14",
+  "location": "杭州",
+  "category": "P",
+  "tags": [
+    "唯美"
+  ],
+  "layout": {
+    "cover": {
+      "thumbnail": "public/gallery/portrait/25-04/2025-04-14 美元象山校区/thumbnails/cover.webp",
+      "display": "public/gallery/portrait/25-04/2025-04-14 美元象山校区/display/cover.webp"
+    },
+    "grid_1": {
+      "thumbnail": "public/gallery/portrait/25-04/2025-04-14 美元象山校区/thumbnails/1.webp",
+      "display": "public/gallery/portrait/25-04/2025-04-14 美元象山校区/display/1.webp"
+    },
+    "grid_2": {
+      "thumbnail": "public/gallery/portrait/25-04/2025-04-14 美元象山校区/thumbnails/2.webp",
+      "display": "public/gallery/portrait/25-04/2025-04-14 美元象山校区/display/2.webp"
+    },
+    "grid_3": {
+      "thumbnail": "public/gallery/portrait/25-04/2025-04-14 美元象山校区/thumbnails/3.webp",
+      "display": "public/gallery/portrait/25-04/2025-04-14 美元象山校区/display/3.webp"
+    },
+    "grid_4": {
+      "thumbnail": "public/gallery/portrait/25-04/2025-04-14 美元象山校区/thumbnails/4.webp",
+      "display": "public/gallery/portrait/25-04/2025-04-14 美元象山校区/display/4.webp"
+    },
+    "grid_5": {
+      "thumbnail": "public/gallery/portrait/25-04/2025-04-14 美元象山校区/thumbnails/5.webp",
+      "display": "public/gallery/portrait/25-04/2025-04-14 美元象山校区/display/5.webp"
+    }
+  },
+  "others": []
+}
