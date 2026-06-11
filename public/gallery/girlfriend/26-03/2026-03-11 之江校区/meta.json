@@ -1,0 +1,97 @@
+{
+  "id": "girl-2026-03-11-之江校区",
+  "type": "gallery",
+  "title": "之江校区",
+  "date": "2026-03-11",
+  "location": "杭州",
+  "category": "G",
+  "tags": [
+    "日系",
+    "jk",
+    "校园"
+  ],
+  "layout": {
+    "cover": {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/cover.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/cover.webp"
+    },
+    "grid_1": {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/1.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/1.webp"
+    },
+    "grid_2": {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/2.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/2.webp"
+    },
+    "grid_3": {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/3.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/3.webp"
+    },
+    "grid_4": {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/4.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/4.webp"
+    },
+    "grid_5": {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/5.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/5.webp"
+    }
+  },
+  "others": [
+    {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/6.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/6.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/7.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/7.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/8.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/8.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/9.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/9.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/10.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/10.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/11.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/11.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/12.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/12.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/13.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/13.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/14.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/14.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/15.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/15.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/16.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/16.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/17.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/17.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/18.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/18.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/thumbnails/19.webp",
+      "display": "public/gallery/girlfriend/26-03/2026-03-11 之江校区/display/19.webp"
+    }
+  ]
+}

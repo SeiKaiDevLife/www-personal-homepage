@@ -1,0 +1,60 @@
+{
+  "id": "girl-2026-05-16-乌龙涧",
+  "type": "gallery",
+  "title": "乌龙涧",
+  "date": "2026-05-16",
+  "location": "杭州",
+  "category": "G",
+  "tags": [
+    "日系",
+    "jk"
+  ],
+  "layout": {
+    "cover": {
+      "thumbnail": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/thumbnails/cover.webp",
+      "display": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/display/cover.webp"
+    },
+    "grid_1": {
+      "thumbnail": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/thumbnails/1.webp",
+      "display": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/display/1.webp"
+    },
+    "grid_2": {
+      "thumbnail": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/thumbnails/2.webp",
+      "display": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/display/2.webp"
+    },
+    "grid_3": {
+      "thumbnail": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/thumbnails/3.webp",
+      "display": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/display/3.webp"
+    },
+    "grid_4": {
+      "thumbnail": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/thumbnails/4.webp",
+      "display": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/display/4.webp"
+    },
+    "grid_5": {
+      "thumbnail": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/thumbnails/5.webp",
+      "display": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/display/5.webp"
+    }
+  },
+  "others": [
+    {
+      "thumbnail": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/thumbnails/6.webp",
+      "display": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/display/6.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/thumbnails/7.webp",
+      "display": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/display/7.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/thumbnails/8.webp",
+      "display": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/display/8.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/thumbnails/9.webp",
+      "display": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/display/9.webp"
+    },
+    {
+      "thumbnail": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/thumbnails/10.webp",
+      "display": "public/gallery/girlfriend/26-05/2026-05-16 乌龙涧/display/10.webp"
+    }
+  ]
+}

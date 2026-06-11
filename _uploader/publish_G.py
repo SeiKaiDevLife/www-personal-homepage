@@ -1,6 +1,7 @@
 import os
 import json
 import sys
+import subprocess
 from datetime import datetime
 from PIL import Image
 
@@ -9,7 +10,6 @@ UPLOADER_DIR = os.path.join(BASE_DIR, '_uploader')
 IMAGES_DIR = os.path.join(UPLOADER_DIR, 'images')
 INFO_JSON = os.path.join(UPLOADER_DIR, 'info_G.json')
 PUBLIC_GALLERY_DIR = os.path.join(BASE_DIR, 'public', 'gallery')
-DB_JSON = os.path.join(BASE_DIR, 'data', 'photos.json')
 
 def process_image_file(source_path, target_dir, yy_mm, folder_name, new_filename):
     display_dir = os.path.join(target_dir, 'display')
@@ -62,12 +62,6 @@ def main():
         except Exception as e:
             print("解析 info_G.json 失败:", e)
             return
-            
-    db_data = []
-    if os.path.exists(DB_JSON):
-        with open(DB_JSON, 'r', encoding='utf-8') as f:
-            try: db_data = json.load(f)
-            except: pass
 
     title = info.get('title', '未命名写真')
     date_str = info.get('date', '2026-01-01')
@@ -87,7 +81,6 @@ def main():
     required_keys = ['cover', 'grid_1', 'grid_2', 'grid_3', 'grid_4', 'grid_5']
     missing_files = []
     
-    # 检查布局图是否存在
     layout_files = []
     for key in required_keys:
         fname = layout.get(key)
@@ -104,7 +97,6 @@ def main():
         print(f"严重错误: 缺失必要的1+5布局图片: {', '.join(missing_files)}")
         sys.exit(1)
 
-    # 自动识别其他图片
     valid_exts = ('.jpg', '.jpeg', '.png', '.webp', '.tiff')
     all_files = [f for f in os.listdir(IMAGES_DIR) if f.lower().endswith(valid_exts)]
     other_files = [f for f in all_files if f not in layout_files]
@@ -144,14 +136,17 @@ def main():
         "others": processed_others
     }
     
-    db_data = [item for item in db_data if item['id'] != entry_id]
-    db_data.append(new_entry)
-
-    db_data.sort(key=lambda x: x['date'], reverse=True)
-    with open(DB_JSON, 'w', encoding='utf-8') as f:
-        json.dump(db_data, f, ensure_ascii=False, indent=2)
+    meta_path = os.path.join(target_dir, "meta.json")
+    with open(meta_path, 'w', encoding='utf-8') as f:
+        json.dump(new_entry, f, ensure_ascii=False, indent=2)
         
-    print(f"\n完美收工！成功处理了 {processed_count} 张写真照片，原图已清理。")
+    print(f"成功写入底层物理记录: {meta_path}")
+    
+    # 触发 Manager 自动构建
+    manager_script = os.path.join(BASE_DIR, 'data', 'manager.py')
+    subprocess.run(['python', manager_script, 'build'])
+
+    print(f"\n完美收工！成功处理了 {processed_count} 张写真照片。")
 
 if __name__ == "__main__":
     main()

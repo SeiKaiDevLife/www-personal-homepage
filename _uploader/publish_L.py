@@ -1,6 +1,7 @@
 import os
 import json
 import sys
+import subprocess
 from datetime import datetime
 from PIL import Image
 
@@ -9,7 +10,6 @@ UPLOADER_DIR = os.path.join(BASE_DIR, '_uploader')
 IMAGES_DIR = os.path.join(UPLOADER_DIR, 'images')
 INFO_JSON = os.path.join(UPLOADER_DIR, 'info_L.json')
 PUBLIC_GALLERY_DIR = os.path.join(BASE_DIR, 'public', 'gallery')
-DB_JSON = os.path.join(BASE_DIR, 'data', 'photos.json')
 
 def process_image_file(source_path, target_dir, yy_mm, folder_name, new_filename):
     display_dir = os.path.join(target_dir, 'display')
@@ -26,7 +26,6 @@ def process_image_file(source_path, target_dir, yy_mm, folder_name, new_filename
             if img.mode in ("RGBA", "P", "CMYK"):
                 img = img.convert("RGB")
             
-            # Display
             disp_ratio = min(2160 / img.width, 2160 / img.height)
             if disp_ratio < 1:
                 disp_size = (int(img.width * disp_ratio), int(img.height * disp_ratio))
@@ -35,7 +34,6 @@ def process_image_file(source_path, target_dir, yy_mm, folder_name, new_filename
                 disp_img = img
             disp_img.save(display_path, 'WEBP', quality=85)
             
-            # Thumbnail
             thumb_ratio = min(1000 / img.width, 1000 / img.height)
             if thumb_ratio < 1:
                 thumb_size = (int(img.width * thumb_ratio), int(img.height * thumb_ratio))
@@ -44,7 +42,6 @@ def process_image_file(source_path, target_dir, yy_mm, folder_name, new_filename
                 thumb_img = img
             thumb_img.save(thumb_path, 'WEBP', quality=80)
             
-            # 彻底删除原图
             os.remove(source_path)
             
             rel_display = f"public/gallery/landscape/{yy_mm}/{folder_name}/display/{webp_filename}"
@@ -65,12 +62,6 @@ def main():
         except Exception as e:
             print("解析 info_L.json 失败:", e)
             return
-            
-    db_data = []
-    if os.path.exists(DB_JSON):
-        with open(DB_JSON, 'r', encoding='utf-8') as f:
-            try: db_data = json.load(f)
-            except: pass
 
     title = info.get('title', '未命名风景')
     date_str = info.get('date', '2026-01-01')
@@ -83,7 +74,6 @@ def main():
     folder_name = f"{date_str} {title}"
     target_dir = os.path.join(PUBLIC_GALLERY_DIR, "landscape", yy_mm, folder_name)
 
-    # 自动获取目录下所有图片
     if not os.path.exists(IMAGES_DIR):
         os.makedirs(IMAGES_DIR)
         
@@ -95,6 +85,8 @@ def main():
         return
 
     processed_count = 0
+    local_entries = []
+    
     for idx, fname in enumerate(all_files, start=1):
         source_path = os.path.join(IMAGES_DIR, fname)
         new_fname = str(idx)
@@ -114,15 +106,21 @@ def main():
                 "thumbnail": thumb,
                 "display": disp
             }
-            db_data = [item for item in db_data if item['id'] != entry_id]
-            db_data.append(new_entry)
+            local_entries.append(new_entry)
             processed_count += 1
 
-    db_data.sort(key=lambda x: x['date'], reverse=True)
-    with open(DB_JSON, 'w', encoding='utf-8') as f:
-        json.dump(db_data, f, ensure_ascii=False, indent=2)
+    if local_entries:
+        meta_path = os.path.join(target_dir, "meta.json")
+        with open(meta_path, 'w', encoding='utf-8') as f:
+            json.dump(local_entries, f, ensure_ascii=False, indent=2)
+            
+        print(f"成功写入底层物理记录: {meta_path}")
         
-    print(f"\n完美收工！成功处理了 {processed_count} 张风景照片，原图已清理。")
+        # 触发 Manager 自动构建
+        manager_script = os.path.join(BASE_DIR, 'data', 'manager.py')
+        subprocess.run(['python', manager_script, 'build'])
+        
+    print(f"\n完美收工！成功处理了 {processed_count} 张风景照片。")
 
 if __name__ == "__main__":
     main()
