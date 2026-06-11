@@ -263,6 +263,14 @@ main {
     transition: color 0.3s;
     font-size: 14px;
     letter-spacing: 1px;
+    position: sticky;
+    top: 20px;
+    z-index: 50;
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.05);
 }
 .back-nav:hover { color: var(--accent); }
 .gallery-header { margin-bottom: 80px; text-align: center; }
