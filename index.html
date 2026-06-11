@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SeiKai | Photography</title>
-    <link rel="stylesheet" href="index.css?v=12">
+    <link rel="stylesheet" href="index.css?v=13">
     <!-- 引入 Vue 3 CDN -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     <!-- 引入高级字体 -->
@@ -48,7 +48,7 @@
             </div>
 
             <!-- 首页主瀑布流 (动态渲染风景或写真) -->
-            <div class="feed" v-else>
+            <div class="feed" v-else :key="filter">
                 <template v-for="(block, bIdx) in groupedFeed" :key="bIdx">
                     
                     <!-- 风景照：Justified Image Grid（横向两端对齐） -->

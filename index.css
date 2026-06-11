@@ -50,8 +50,8 @@ body, html {
     pointer-events: none;
 }
 .hero-avatar {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     margin-bottom: 24px;
     border-radius: 50%;
     overflow: hidden;
@@ -138,6 +138,15 @@ body, html {
 
 main {
     padding: 0 5% 100px;
+}
+
+@keyframes fadeSlideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.feed {
+    animation: fadeSlideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 /* ================= 风景：横向两端对齐排版 ================= */
@@ -272,11 +281,7 @@ main {
 .dedicated-gallery {
     max-width: 800px;
     margin: 40px auto 0;
-    animation: fadeIn 0.5s ease;
-}
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(15px); }
-    to { opacity: 1; transform: translateY(0); }
+    animation: fadeSlideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 .back-nav {
     display: inline-flex;
@@ -354,7 +359,7 @@ main {
 }
 
 @media (max-width: 768px) {
-    .hero-avatar { width: 80px; height: 80px; margin-bottom: 16px; }
+    .hero-avatar { width: 100px; height: 100px; margin-bottom: 16px; }
     .hero-title { font-size: 32px; letter-spacing: 6px; padding-left: 6px; margin-bottom: 5px; }
     .hero-subtitle { font-size: 10px; letter-spacing: 3px; }
     .sticky-nav { gap: 30px; padding: 15px 0; margin-bottom: 20px; }
