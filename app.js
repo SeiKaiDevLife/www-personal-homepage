@@ -13,24 +13,7 @@ createApp({
             item: null
         });
 
-        // 响应式计算瀑布流列数
-        const colCount = ref(3);
-        const updateColCount = () => {
-            const width = window.innerWidth;
-            if (width <= 768) {
-                colCount.value = 2; // 移动端固定2列
-            } else {
-                // PC端：容器最大1800px，左右padding 5%，列宽约220px，间距16px
-                const containerWidth = Math.min(1800, width * 0.9);
-                let n = Math.floor((containerWidth + 16) / 236);
-                colCount.value = Math.max(1, n);
-            }
-        };
-
         onMounted(async () => {
-            updateColCount();
-            window.addEventListener('resize', updateColCount);
-            
             try {
                 // 读取 JSON 数据（附加时间戳防止 GitHub Pages 缓存死数据）
                 const res = await fetch('data/photos.json?' + new Date().getTime());
@@ -125,15 +108,6 @@ createApp({
             return arr;
         });
 
-        // 将一维的 masonry items 转换成多列二维数组，实现真正的从左到右、从上到下排布
-        const getMasonryCols = (items) => {
-            const cols = Array.from({ length: colCount.value }, () => []);
-            items.forEach((item, index) => {
-                cols[index % colCount.value].push(item);
-            });
-            return cols;
-        };
-
         return {
             photos, 
             filter, 
@@ -147,9 +121,7 @@ createApp({
             activeGallery, 
             openGallery, 
             closeGallery, 
-            activeGalleryAllImages,
-
-            getMasonryCols
+            activeGalleryAllImages
         }
     }
 }).mount('#app');

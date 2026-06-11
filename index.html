@@ -50,10 +50,8 @@
                     
                     <!-- 风景照：无字纯净版瀑布流 -->
                     <div class="masonry-container" v-if="block.type === 'masonry'">
-                        <div class="masonry-column" v-for="(col, cIdx) in getMasonryCols(block.items)" :key="cIdx">
-                            <div class="masonry-item" v-for="item in col" :key="item.id" @click="openLightbox(item.display, item)">
-                                <img :src="item.thumbnail" loading="lazy" alt="landscape">
-                            </div>
+                        <div class="masonry-item" v-for="item in block.items" :key="item.id" @click="openLightbox(item.display, item)">
+                            <img :src="item.thumbnail" loading="lazy" alt="landscape">
                         </div>
                     </div>
 
