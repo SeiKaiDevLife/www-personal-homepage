@@ -1,4 +1,4 @@
-const { createApp, ref, computed, onMounted } = Vue;
+const { createApp, ref, computed, onMounted, nextTick } = Vue;
 
 createApp({
     setup() {
@@ -6,6 +6,7 @@ createApp({
         const filter = ref('landscape'); // landscape, portrait
         
         const activeGallery = ref(null);
+        const savedScrollY = ref(0); // 记录滚动位置
         
         const lightbox = ref({
             isOpen: false,
@@ -95,12 +96,28 @@ createApp({
 
         // 组图全屏界面逻辑
         const openGallery = (item) => {
+            savedScrollY.value = window.scrollY; // 记录当前滚动位置
             activeGallery.value = item;
-            window.scrollTo(0, 0); // 回到顶部
+            
+            // 等待 DOM 渲染出 dedicated-gallery 后再滚动
+            nextTick(() => {
+                const galleryEl = document.querySelector('.dedicated-gallery');
+                if (galleryEl) {
+                    const y = galleryEl.getBoundingClientRect().top + window.scrollY;
+                    window.scrollTo({ top: y - 20, behavior: 'smooth' });
+                } else {
+                    window.scrollTo(0, 0);
+                }
+            });
         };
 
         const closeGallery = () => {
             activeGallery.value = null;
+            
+            // 等待 DOM 恢复为主列表后再恢复滚动位置
+            nextTick(() => {
+                window.scrollTo({ top: savedScrollY.value, behavior: 'instant' });
+            });
         };
 
         // 获取当前组图专属界面下的所有大图数组
