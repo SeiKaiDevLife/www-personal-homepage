@@ -322,17 +322,15 @@ main {
     color: var(--text-muted);
     font-size: 13px;
     letter-spacing: 1px;
+    text-align: center;
 }
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    max-width: 1800px;
-    margin: 0 auto 40px auto;
+    gap: 80px;
+    margin-bottom: 40px;
     flex-wrap: wrap;
-}
-.footer-info {
-    text-align: left;
 }
 .footer-info p {
     margin: 8px 0;
@@ -344,9 +342,6 @@ main {
 }
 .footer-info a:hover {
     color: var(--accent);
-}
-.footer-qrcode {
-    text-align: right;
 }
 .footer-qrcode img {
     width: 100px;
@@ -364,9 +359,6 @@ main {
     font-size: 12px;
 }
 .footer-bottom {
-    max-width: 1800px;
-    margin: 0 auto;
-    text-align: left;
     font-weight: 300;
 }
 .footer-bottom p {
