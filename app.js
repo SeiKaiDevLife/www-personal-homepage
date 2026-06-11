@@ -19,10 +19,11 @@ createApp({
             const width = window.innerWidth;
             if (width <= 768) {
                 colCount.value = 2;
-            } else if (width <= 1024) {
-                colCount.value = 3;
             } else {
-                colCount.value = 4;
+                // PC端：根据宽度自适应计算，还原之前的 auto 220px 计算逻辑，支持 4K 大屏多列显示
+                const containerWidth = Math.min(1800, width * 0.9);
+                let n = Math.floor((containerWidth + 16) / 236);
+                colCount.value = Math.max(1, n);
             }
         };
 
