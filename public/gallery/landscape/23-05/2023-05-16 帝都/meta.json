@@ -11,7 +11,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/1.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/1.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/1.webp",
+    "width": 1426,
+    "height": 2160,
+    "aspectRatio": 0.6602
   },
   {
     "id": "land-2023-05-16-帝都-2",
@@ -25,7 +28,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/2.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/2.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/2.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-05-16-帝都-3",
@@ -39,7 +45,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/3.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/3.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/3.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2023-05-16-帝都-4",
@@ -53,7 +62,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/4.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/4.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/4.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-05-16-帝都-5",
@@ -67,7 +79,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/5.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/5.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/5.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-05-16-帝都-6",
@@ -81,7 +96,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/6.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/6.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/6.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2023-05-16-帝都-7",
@@ -95,7 +113,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/7.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/7.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/7.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-05-16-帝都-8",
@@ -109,7 +130,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/8.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/8.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/8.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-05-16-帝都-9",
@@ -123,7 +147,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/9.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/9.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/9.webp",
+    "width": 1446,
+    "height": 2160,
+    "aspectRatio": 0.6694
   },
   {
     "id": "land-2023-05-16-帝都-10",
@@ -137,7 +164,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/10.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/10.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/10.webp",
+    "width": 1439,
+    "height": 2160,
+    "aspectRatio": 0.6662
   },
   {
     "id": "land-2023-05-16-帝都-11",
@@ -151,7 +181,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/11.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/11.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/11.webp",
+    "width": 1417,
+    "height": 2160,
+    "aspectRatio": 0.656
   },
   {
     "id": "land-2023-05-16-帝都-12",
@@ -165,7 +198,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/12.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/12.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/12.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2023-05-16-帝都-13",
@@ -179,7 +215,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/13.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/13.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/13.webp",
+    "width": 1439,
+    "height": 2160,
+    "aspectRatio": 0.6662
   },
   {
     "id": "land-2023-05-16-帝都-14",
@@ -193,7 +232,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/14.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/14.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/14.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-05-16-帝都-15",
@@ -207,7 +249,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/15.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/15.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/15.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-05-16-帝都-16",
@@ -221,7 +266,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/16.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/16.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/16.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-05-16-帝都-17",
@@ -235,7 +283,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/17.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/17.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/17.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-05-16-帝都-18",
@@ -249,7 +300,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/18.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/18.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/18.webp",
+    "width": 1362,
+    "height": 2160,
+    "aspectRatio": 0.6306
   },
   {
     "id": "land-2023-05-16-帝都-19",
@@ -263,7 +317,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/19.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/19.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/19.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2023-05-16-帝都-20",
@@ -277,7 +334,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/20.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/20.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/20.webp",
+    "width": 1439,
+    "height": 2160,
+    "aspectRatio": 0.6662
   },
   {
     "id": "land-2023-05-16-帝都-21",
@@ -291,7 +351,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/21.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/21.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/21.webp",
+    "width": 1375,
+    "height": 2160,
+    "aspectRatio": 0.6366
   },
   {
     "id": "land-2023-05-16-帝都-22",
@@ -305,7 +368,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/22.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/22.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/22.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-05-16-帝都-23",
@@ -319,7 +385,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/23.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/23.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/23.webp",
+    "width": 2160,
+    "height": 1525,
+    "aspectRatio": 1.4164
   },
   {
     "id": "land-2023-05-16-帝都-24",
@@ -333,7 +402,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/24.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/24.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/24.webp",
+    "width": 1407,
+    "height": 2160,
+    "aspectRatio": 0.6514
   },
   {
     "id": "land-2023-05-16-帝都-25",
@@ -347,7 +419,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/25.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/25.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/25.webp",
+    "width": 1468,
+    "height": 2160,
+    "aspectRatio": 0.6796
   },
   {
     "id": "land-2023-05-16-帝都-26",
@@ -361,7 +436,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/26.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/26.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/26.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-05-16-帝都-27",
@@ -375,6 +453,9 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-05/2023-05-16 帝都/thumbnails/27.webp",
-    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/27.webp"
+    "display": "public/gallery/landscape/23-05/2023-05-16 帝都/display/27.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   }
 ]

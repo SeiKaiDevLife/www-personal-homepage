@@ -11,6 +11,9 @@
       "风光"
     ],
     "thumbnail": "public/gallery/landscape/23-12/2023-12-15 双子座流星雨/thumbnails/1.webp",
-    "display": "public/gallery/landscape/23-12/2023-12-15 双子座流星雨/display/1.webp"
+    "display": "public/gallery/landscape/23-12/2023-12-15 双子座流星雨/display/1.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   }
 ]

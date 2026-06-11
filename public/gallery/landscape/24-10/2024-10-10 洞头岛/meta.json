@@ -11,7 +11,10 @@
       "风光"
     ],
     "thumbnail": "public/gallery/landscape/24-10/2024-10-10 洞头岛/thumbnails/1.webp",
-    "display": "public/gallery/landscape/24-10/2024-10-10 洞头岛/display/1.webp"
+    "display": "public/gallery/landscape/24-10/2024-10-10 洞头岛/display/1.webp",
+    "width": 2160,
+    "height": 919,
+    "aspectRatio": 2.3504
   },
   {
     "id": "land-2024-10-10-洞头岛-2",
@@ -25,7 +28,10 @@
       "风光"
     ],
     "thumbnail": "public/gallery/landscape/24-10/2024-10-10 洞头岛/thumbnails/2.webp",
-    "display": "public/gallery/landscape/24-10/2024-10-10 洞头岛/display/2.webp"
+    "display": "public/gallery/landscape/24-10/2024-10-10 洞头岛/display/2.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2024-10-10-洞头岛-3",
@@ -39,7 +45,10 @@
       "风光"
     ],
     "thumbnail": "public/gallery/landscape/24-10/2024-10-10 洞头岛/thumbnails/3.webp",
-    "display": "public/gallery/landscape/24-10/2024-10-10 洞头岛/display/3.webp"
+    "display": "public/gallery/landscape/24-10/2024-10-10 洞头岛/display/3.webp",
+    "width": 2160,
+    "height": 919,
+    "aspectRatio": 2.3504
   },
   {
     "id": "land-2024-10-10-洞头岛-4",
@@ -53,7 +62,10 @@
       "风光"
     ],
     "thumbnail": "public/gallery/landscape/24-10/2024-10-10 洞头岛/thumbnails/4.webp",
-    "display": "public/gallery/landscape/24-10/2024-10-10 洞头岛/display/4.webp"
+    "display": "public/gallery/landscape/24-10/2024-10-10 洞头岛/display/4.webp",
+    "width": 2160,
+    "height": 919,
+    "aspectRatio": 2.3504
   },
   {
     "id": "land-2024-10-10-洞头岛-5",
@@ -67,6 +79,9 @@
       "风光"
     ],
     "thumbnail": "public/gallery/landscape/24-10/2024-10-10 洞头岛/thumbnails/5.webp",
-    "display": "public/gallery/landscape/24-10/2024-10-10 洞头岛/display/5.webp"
+    "display": "public/gallery/landscape/24-10/2024-10-10 洞头岛/display/5.webp",
+    "width": 2160,
+    "height": 919,
+    "aspectRatio": 2.3504
   }
 ]

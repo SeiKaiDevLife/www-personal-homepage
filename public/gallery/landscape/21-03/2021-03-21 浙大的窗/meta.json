@@ -11,7 +11,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/21-03/2021-03-21 浙大的窗/thumbnails/1.webp",
-    "display": "public/gallery/landscape/21-03/2021-03-21 浙大的窗/display/1.webp"
+    "display": "public/gallery/landscape/21-03/2021-03-21 浙大的窗/display/1.webp",
+    "width": 2160,
+    "height": 1505,
+    "aspectRatio": 1.4352
   },
   {
     "id": "land-2021-03-21-浙大的窗-2",
@@ -25,6 +28,9 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/21-03/2021-03-21 浙大的窗/thumbnails/2.webp",
-    "display": "public/gallery/landscape/21-03/2021-03-21 浙大的窗/display/2.webp"
+    "display": "public/gallery/landscape/21-03/2021-03-21 浙大的窗/display/2.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   }
 ]

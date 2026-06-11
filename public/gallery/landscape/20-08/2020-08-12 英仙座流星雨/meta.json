@@ -11,7 +11,10 @@
       "风光"
     ],
     "thumbnail": "public/gallery/landscape/20-08/2020-08-12 英仙座流星雨/thumbnails/1.webp",
-    "display": "public/gallery/landscape/20-08/2020-08-12 英仙座流星雨/display/1.webp"
+    "display": "public/gallery/landscape/20-08/2020-08-12 英仙座流星雨/display/1.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2020-08-12-英仙座流星雨-2",
@@ -25,7 +28,10 @@
       "风光"
     ],
     "thumbnail": "public/gallery/landscape/20-08/2020-08-12 英仙座流星雨/thumbnails/2.webp",
-    "display": "public/gallery/landscape/20-08/2020-08-12 英仙座流星雨/display/2.webp"
+    "display": "public/gallery/landscape/20-08/2020-08-12 英仙座流星雨/display/2.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2020-08-12-英仙座流星雨-3",
@@ -39,6 +45,9 @@
       "风光"
     ],
     "thumbnail": "public/gallery/landscape/20-08/2020-08-12 英仙座流星雨/thumbnails/3.webp",
-    "display": "public/gallery/landscape/20-08/2020-08-12 英仙座流星雨/display/3.webp"
+    "display": "public/gallery/landscape/20-08/2020-08-12 英仙座流星雨/display/3.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   }
 ]

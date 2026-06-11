@@ -11,7 +11,10 @@
       "风光"
     ],
     "thumbnail": "public/gallery/landscape/19-07/2019-07-07 地质实习/thumbnails/1.webp",
-    "display": "public/gallery/landscape/19-07/2019-07-07 地质实习/display/1.webp"
+    "display": "public/gallery/landscape/19-07/2019-07-07 地质实习/display/1.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2019-07-07-地质实习-2",
@@ -25,7 +28,10 @@
       "风光"
     ],
     "thumbnail": "public/gallery/landscape/19-07/2019-07-07 地质实习/thumbnails/2.webp",
-    "display": "public/gallery/landscape/19-07/2019-07-07 地质实习/display/2.webp"
+    "display": "public/gallery/landscape/19-07/2019-07-07 地质实习/display/2.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2019-07-07-地质实习-3",
@@ -39,7 +45,10 @@
       "风光"
     ],
     "thumbnail": "public/gallery/landscape/19-07/2019-07-07 地质实习/thumbnails/3.webp",
-    "display": "public/gallery/landscape/19-07/2019-07-07 地质实习/display/3.webp"
+    "display": "public/gallery/landscape/19-07/2019-07-07 地质实习/display/3.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2019-07-07-地质实习-4",
@@ -53,7 +62,10 @@
       "风光"
     ],
     "thumbnail": "public/gallery/landscape/19-07/2019-07-07 地质实习/thumbnails/4.webp",
-    "display": "public/gallery/landscape/19-07/2019-07-07 地质实习/display/4.webp"
+    "display": "public/gallery/landscape/19-07/2019-07-07 地质实习/display/4.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2019-07-07-地质实习-5",
@@ -67,6 +79,9 @@
       "风光"
     ],
     "thumbnail": "public/gallery/landscape/19-07/2019-07-07 地质实习/thumbnails/5.webp",
-    "display": "public/gallery/landscape/19-07/2019-07-07 地质实习/display/5.webp"
+    "display": "public/gallery/landscape/19-07/2019-07-07 地质实习/display/5.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   }
 ]

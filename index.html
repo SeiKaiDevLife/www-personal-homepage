@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SeiKai | Photography</title>
-    <link rel="stylesheet" href="index.css?v=8">
+    <link rel="stylesheet" href="index.css?v=9">
     <!-- 引入 Vue 3 CDN -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     <!-- 引入高级字体 -->
@@ -20,7 +20,7 @@
         </div>
 
         <!-- 居中悬浮导航栏 (移除 All 选项) -->
-        <nav class="sticky-nav">
+        <nav class="sticky-nav" v-if="!activeGallery">
             <div class="nav-item" :class="{active: filter==='landscape'}" @click="filter='landscape'">LANDSCAPE</div>
             <div class="nav-item" :class="{active: filter==='portrait'}" @click="filter='portrait'">PORTRAITS</div>
         </nav>
@@ -48,12 +48,15 @@
             <div class="feed" v-else>
                 <template v-for="(block, bIdx) in groupedFeed" :key="bIdx">
                     
-                    <!-- 风景照：无字纯净版瀑布流 -->
-                    <div class="masonry-container" v-if="block.type === 'masonry'">
-                        <div class="masonry-column" v-for="(col, cIdx) in block.cols" :key="cIdx">
-                            <div class="masonry-item" v-for="item in col" :key="item.id" @click="openLightbox(item.display, item)">
-                                <img :src="item.thumbnail" loading="lazy" alt="landscape">
-                            </div>
+                    <!-- 风景照：Justified Image Grid（横向两端对齐） -->
+                    <div class="justified-container" v-if="block.type === 'justified'">
+                        <div class="justified-item" 
+                             v-for="item in block.items" 
+                             :key="item.id" 
+                             @click="openLightbox(item.display, item)"
+                             :style="{ flexGrow: item.aspectRatio || 1, flexBasis: ((item.aspectRatio || 1) * 300) + 'px' }">
+                            <i :style="{ paddingBottom: (1 / (item.aspectRatio || 1)) * 100 + '%' }"></i>
+                            <img :src="item.thumbnail" loading="lazy" alt="landscape">
                         </div>
                     </div>
 
@@ -99,6 +102,6 @@
             </div>
         </div>
     </div>
-    <script src="app.js?v=4"></script>
+    <script src="app.js?v=5"></script>
 </body>
 </html>

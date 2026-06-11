@@ -11,7 +11,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/20-05/2020-05-03 天竺/thumbnails/1.webp",
-    "display": "public/gallery/landscape/20-05/2020-05-03 天竺/display/1.webp"
+    "display": "public/gallery/landscape/20-05/2020-05-03 天竺/display/1.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2020-05-03-天竺-2",
@@ -25,7 +28,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/20-05/2020-05-03 天竺/thumbnails/2.webp",
-    "display": "public/gallery/landscape/20-05/2020-05-03 天竺/display/2.webp"
+    "display": "public/gallery/landscape/20-05/2020-05-03 天竺/display/2.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2020-05-03-天竺-3",
@@ -39,7 +45,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/20-05/2020-05-03 天竺/thumbnails/3.webp",
-    "display": "public/gallery/landscape/20-05/2020-05-03 天竺/display/3.webp"
+    "display": "public/gallery/landscape/20-05/2020-05-03 天竺/display/3.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2020-05-03-天竺-4",
@@ -53,7 +62,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/20-05/2020-05-03 天竺/thumbnails/4.webp",
-    "display": "public/gallery/landscape/20-05/2020-05-03 天竺/display/4.webp"
+    "display": "public/gallery/landscape/20-05/2020-05-03 天竺/display/4.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2020-05-03-天竺-5",
@@ -67,7 +79,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/20-05/2020-05-03 天竺/thumbnails/5.webp",
-    "display": "public/gallery/landscape/20-05/2020-05-03 天竺/display/5.webp"
+    "display": "public/gallery/landscape/20-05/2020-05-03 天竺/display/5.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2020-05-03-天竺-6",
@@ -81,7 +96,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/20-05/2020-05-03 天竺/thumbnails/6.webp",
-    "display": "public/gallery/landscape/20-05/2020-05-03 天竺/display/6.webp"
+    "display": "public/gallery/landscape/20-05/2020-05-03 天竺/display/6.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2020-05-03-天竺-7",
@@ -95,6 +113,9 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/20-05/2020-05-03 天竺/thumbnails/7.webp",
-    "display": "public/gallery/landscape/20-05/2020-05-03 天竺/display/7.webp"
+    "display": "public/gallery/landscape/20-05/2020-05-03 天竺/display/7.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   }
 ]

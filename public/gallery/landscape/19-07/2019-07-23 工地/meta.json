@@ -11,6 +11,9 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-07/2019-07-23 工地/thumbnails/1.webp",
-    "display": "public/gallery/landscape/19-07/2019-07-23 工地/display/1.webp"
+    "display": "public/gallery/landscape/19-07/2019-07-23 工地/display/1.webp",
+    "width": 2160,
+    "height": 1015,
+    "aspectRatio": 2.1281
   }
 ]

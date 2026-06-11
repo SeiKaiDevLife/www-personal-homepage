@@ -10,7 +10,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/18-12/2018-12-08 浙大雪景/thumbnails/1.webp",
-    "display": "public/gallery/landscape/18-12/2018-12-08 浙大雪景/display/1.webp"
+    "display": "public/gallery/landscape/18-12/2018-12-08 浙大雪景/display/1.webp",
+    "width": 2160,
+    "height": 1064,
+    "aspectRatio": 2.0301
   },
   {
     "id": "land-2018-12-08-浙大雪景-2",
@@ -23,6 +26,9 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/18-12/2018-12-08 浙大雪景/thumbnails/2.webp",
-    "display": "public/gallery/landscape/18-12/2018-12-08 浙大雪景/display/2.webp"
+    "display": "public/gallery/landscape/18-12/2018-12-08 浙大雪景/display/2.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   }
 ]

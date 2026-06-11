@@ -115,34 +115,39 @@ main {
     padding: 0 5% 100px;
 }
 
-/* ================= 风景：瀑布流展示区 ================= */
-.masonry-container {
+/* ================= 风景：横向两端对齐排版 ================= */
+.justified-container {
     display: flex;
-    gap: 16px;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
     margin: 0 auto 80px auto;
     max-width: 1800px;
     width: 100%;
 }
-.masonry-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+.justified-container::after {
+    content: '';
+    flex-grow: 999999999;
+    min-width: 20%;
 }
-.masonry-item {
-    break-inside: avoid;
-    margin-bottom: 20px;
-    cursor: zoom-in;
+.justified-item {
     position: relative;
+    cursor: zoom-in;
     overflow: hidden;
     border-radius: 4px;
 }
-.masonry-item img {
-    width: 100%;
+.justified-item i {
     display: block;
+}
+.justified-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.masonry-item:hover img {
+.justified-item:hover img {
     transform: scale(1.03);
 }
 
@@ -315,7 +320,7 @@ main {
     .timeline-row { flex-direction: column; gap: 16px; margin: 40px 0; }
     .timeline-info { position: static; flex: auto; }
     .timeline-grid { gap: 4px; }
-    .masonry-container { gap: 8px; }
+    .justified-container { gap: 8px; }
     main { padding: 0 20px 50px; }
     .gallery-header h1 { font-size: 32px; }
     .lightbox img { max-width: 100vw; }

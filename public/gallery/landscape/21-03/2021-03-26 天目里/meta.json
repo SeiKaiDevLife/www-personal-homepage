@@ -11,6 +11,9 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/21-03/2021-03-26 天目里/thumbnails/1.webp",
-    "display": "public/gallery/landscape/21-03/2021-03-26 天目里/display/1.webp"
+    "display": "public/gallery/landscape/21-03/2021-03-26 天目里/display/1.webp",
+    "width": 2160,
+    "height": 1248,
+    "aspectRatio": 1.7308
   }
 ]

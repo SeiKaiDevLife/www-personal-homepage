@@ -12,7 +12,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/thumbnails/1.webp",
-    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/1.webp"
+    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/1.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2023-07-13-大面山-桂林-龙脊梯田-2",
@@ -27,7 +30,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/thumbnails/2.webp",
-    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/2.webp"
+    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/2.webp",
+    "width": 2160,
+    "height": 1280,
+    "aspectRatio": 1.6875
   },
   {
     "id": "land-2023-07-13-大面山-桂林-龙脊梯田-3",
@@ -42,7 +48,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/thumbnails/3.webp",
-    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/3.webp"
+    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/3.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2023-07-13-大面山-桂林-龙脊梯田-4",
@@ -57,7 +66,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/thumbnails/4.webp",
-    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/4.webp"
+    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/4.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-07-13-大面山-桂林-龙脊梯田-5",
@@ -72,7 +84,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/thumbnails/5.webp",
-    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/5.webp"
+    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/5.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-07-13-大面山-桂林-龙脊梯田-6",
@@ -87,7 +102,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/thumbnails/6.webp",
-    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/6.webp"
+    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/6.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2023-07-13-大面山-桂林-龙脊梯田-7",
@@ -102,7 +120,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/thumbnails/7.webp",
-    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/7.webp"
+    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/7.webp",
+    "width": 1385,
+    "height": 2160,
+    "aspectRatio": 0.6412
   },
   {
     "id": "land-2023-07-13-大面山-桂林-龙脊梯田-8",
@@ -117,7 +138,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/thumbnails/8.webp",
-    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/8.webp"
+    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/8.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-07-13-大面山-桂林-龙脊梯田-9",
@@ -132,7 +156,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/thumbnails/9.webp",
-    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/9.webp"
+    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/9.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-07-13-大面山-桂林-龙脊梯田-10",
@@ -147,7 +174,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/thumbnails/10.webp",
-    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/10.webp"
+    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/10.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-07-13-大面山-桂林-龙脊梯田-11",
@@ -162,7 +192,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/thumbnails/11.webp",
-    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/11.webp"
+    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/11.webp",
+    "width": 1439,
+    "height": 2160,
+    "aspectRatio": 0.6662
   },
   {
     "id": "land-2023-07-13-大面山-桂林-龙脊梯田-12",
@@ -177,7 +210,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/thumbnails/12.webp",
-    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/12.webp"
+    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/12.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-07-13-大面山-桂林-龙脊梯田-13",
@@ -192,6 +228,9 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/thumbnails/13.webp",
-    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/13.webp"
+    "display": "public/gallery/landscape/23-07/2023-07-13 大面山-桂林-龙脊梯田/display/13.webp",
+    "width": 1360,
+    "height": 2160,
+    "aspectRatio": 0.6296
   }
 ]

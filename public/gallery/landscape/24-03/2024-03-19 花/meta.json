@@ -10,7 +10,10 @@
       "自然"
     ],
     "thumbnail": "public/gallery/landscape/24-03/2024-03-19 花/thumbnails/1.webp",
-    "display": "public/gallery/landscape/24-03/2024-03-19 花/display/1.webp"
+    "display": "public/gallery/landscape/24-03/2024-03-19 花/display/1.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2024-03-19-花-2",
@@ -23,7 +26,10 @@
       "自然"
     ],
     "thumbnail": "public/gallery/landscape/24-03/2024-03-19 花/thumbnails/2.webp",
-    "display": "public/gallery/landscape/24-03/2024-03-19 花/display/2.webp"
+    "display": "public/gallery/landscape/24-03/2024-03-19 花/display/2.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2024-03-19-花-3",
@@ -36,6 +42,9 @@
       "自然"
     ],
     "thumbnail": "public/gallery/landscape/24-03/2024-03-19 花/thumbnails/3.webp",
-    "display": "public/gallery/landscape/24-03/2024-03-19 花/display/3.webp"
+    "display": "public/gallery/landscape/24-03/2024-03-19 花/display/3.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   }
 ]

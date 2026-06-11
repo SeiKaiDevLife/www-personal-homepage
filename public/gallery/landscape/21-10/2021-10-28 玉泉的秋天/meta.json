@@ -11,7 +11,10 @@
       "自然"
     ],
     "thumbnail": "public/gallery/landscape/21-10/2021-10-28 玉泉的秋天/thumbnails/1.webp",
-    "display": "public/gallery/landscape/21-10/2021-10-28 玉泉的秋天/display/1.webp"
+    "display": "public/gallery/landscape/21-10/2021-10-28 玉泉的秋天/display/1.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2021-10-28-玉泉的秋天-2",
@@ -25,7 +28,10 @@
       "自然"
     ],
     "thumbnail": "public/gallery/landscape/21-10/2021-10-28 玉泉的秋天/thumbnails/2.webp",
-    "display": "public/gallery/landscape/21-10/2021-10-28 玉泉的秋天/display/2.webp"
+    "display": "public/gallery/landscape/21-10/2021-10-28 玉泉的秋天/display/2.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2021-10-28-玉泉的秋天-3",
@@ -39,7 +45,10 @@
       "自然"
     ],
     "thumbnail": "public/gallery/landscape/21-10/2021-10-28 玉泉的秋天/thumbnails/3.webp",
-    "display": "public/gallery/landscape/21-10/2021-10-28 玉泉的秋天/display/3.webp"
+    "display": "public/gallery/landscape/21-10/2021-10-28 玉泉的秋天/display/3.webp",
+    "width": 1377,
+    "height": 2160,
+    "aspectRatio": 0.6375
   },
   {
     "id": "land-2021-10-28-玉泉的秋天-4",
@@ -53,7 +62,10 @@
       "自然"
     ],
     "thumbnail": "public/gallery/landscape/21-10/2021-10-28 玉泉的秋天/thumbnails/4.webp",
-    "display": "public/gallery/landscape/21-10/2021-10-28 玉泉的秋天/display/4.webp"
+    "display": "public/gallery/landscape/21-10/2021-10-28 玉泉的秋天/display/4.webp",
+    "width": 1359,
+    "height": 2160,
+    "aspectRatio": 0.6292
   },
   {
     "id": "land-2021-10-28-玉泉的秋天-5",
@@ -67,6 +79,9 @@
       "自然"
     ],
     "thumbnail": "public/gallery/landscape/21-10/2021-10-28 玉泉的秋天/thumbnails/5.webp",
-    "display": "public/gallery/landscape/21-10/2021-10-28 玉泉的秋天/display/5.webp"
+    "display": "public/gallery/landscape/21-10/2021-10-28 玉泉的秋天/display/5.webp",
+    "width": 1370,
+    "height": 2160,
+    "aspectRatio": 0.6343
   }
 ]

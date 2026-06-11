@@ -11,6 +11,9 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-11/2023-11-29 彭埠大桥/thumbnails/1.webp",
-    "display": "public/gallery/landscape/23-11/2023-11-29 彭埠大桥/display/1.webp"
+    "display": "public/gallery/landscape/23-11/2023-11-29 彭埠大桥/display/1.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   }
 ]

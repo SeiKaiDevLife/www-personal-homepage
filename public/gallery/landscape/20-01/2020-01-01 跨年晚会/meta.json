@@ -10,7 +10,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/thumbnails/1.webp",
-    "display": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/display/1.webp"
+    "display": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/display/1.webp",
+    "width": 2160,
+    "height": 1273,
+    "aspectRatio": 1.6968
   },
   {
     "id": "land-2020-01-01-跨年晚会-2",
@@ -23,7 +26,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/thumbnails/2.webp",
-    "display": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/display/2.webp"
+    "display": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/display/2.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2020-01-01-跨年晚会-3",
@@ -36,7 +42,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/thumbnails/3.webp",
-    "display": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/display/3.webp"
+    "display": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/display/3.webp",
+    "width": 2160,
+    "height": 1414,
+    "aspectRatio": 1.5276
   },
   {
     "id": "land-2020-01-01-跨年晚会-4",
@@ -49,7 +58,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/thumbnails/4.webp",
-    "display": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/display/4.webp"
+    "display": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/display/4.webp",
+    "width": 2160,
+    "height": 1610,
+    "aspectRatio": 1.3416
   },
   {
     "id": "land-2020-01-01-跨年晚会-5",
@@ -62,7 +74,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/thumbnails/5.webp",
-    "display": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/display/5.webp"
+    "display": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/display/5.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2020-01-01-跨年晚会-6",
@@ -75,6 +90,9 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/thumbnails/6.webp",
-    "display": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/display/6.webp"
+    "display": "public/gallery/landscape/20-01/2020-01-01 跨年晚会/display/6.webp",
+    "width": 2160,
+    "height": 1365,
+    "aspectRatio": 1.5824
   }
 ]

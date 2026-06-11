@@ -11,7 +11,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/thumbnails/1.webp",
-    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/1.webp"
+    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/1.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-11-05-美院良渚校区-2",
@@ -25,7 +28,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/thumbnails/2.webp",
-    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/2.webp"
+    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/2.webp",
+    "width": 2160,
+    "height": 1504,
+    "aspectRatio": 1.4362
   },
   {
     "id": "land-2023-11-05-美院良渚校区-3",
@@ -39,7 +45,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/thumbnails/3.webp",
-    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/3.webp"
+    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/3.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2023-11-05-美院良渚校区-4",
@@ -53,7 +62,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/thumbnails/4.webp",
-    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/4.webp"
+    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/4.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-11-05-美院良渚校区-5",
@@ -67,7 +79,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/thumbnails/5.webp",
-    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/5.webp"
+    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/5.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-11-05-美院良渚校区-6",
@@ -81,7 +96,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/thumbnails/6.webp",
-    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/6.webp"
+    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/6.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-11-05-美院良渚校区-7",
@@ -95,7 +113,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/thumbnails/7.webp",
-    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/7.webp"
+    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/7.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-11-05-美院良渚校区-8",
@@ -109,7 +130,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/thumbnails/8.webp",
-    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/8.webp"
+    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/8.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-11-05-美院良渚校区-9",
@@ -123,7 +147,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/thumbnails/9.webp",
-    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/9.webp"
+    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/9.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-11-05-美院良渚校区-10",
@@ -137,6 +164,9 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/thumbnails/10.webp",
-    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/10.webp"
+    "display": "public/gallery/landscape/23-11/2023-11-05 美院良渚校区/display/10.webp",
+    "width": 1366,
+    "height": 2160,
+    "aspectRatio": 0.6324
   }
 ]

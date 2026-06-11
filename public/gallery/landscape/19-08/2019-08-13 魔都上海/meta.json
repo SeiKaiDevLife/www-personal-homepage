@@ -11,7 +11,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/1.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/1.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/1.webp",
+    "width": 2160,
+    "height": 1169,
+    "aspectRatio": 1.8477
   },
   {
     "id": "land-2019-08-13-魔都上海-2",
@@ -25,7 +28,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/2.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/2.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/2.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2019-08-13-魔都上海-3",
@@ -39,7 +45,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/3.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/3.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/3.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2019-08-13-魔都上海-4",
@@ -53,7 +62,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/4.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/4.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/4.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2019-08-13-魔都上海-5",
@@ -67,7 +79,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/5.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/5.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/5.webp",
+    "width": 2160,
+    "height": 1721,
+    "aspectRatio": 1.2551
   },
   {
     "id": "land-2019-08-13-魔都上海-6",
@@ -81,7 +96,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/6.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/6.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/6.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2019-08-13-魔都上海-7",
@@ -95,7 +113,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/7.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/7.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/7.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2019-08-13-魔都上海-8",
@@ -109,7 +130,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/8.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/8.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/8.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2019-08-13-魔都上海-9",
@@ -123,7 +147,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/9.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/9.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/9.webp",
+    "width": 2160,
+    "height": 513,
+    "aspectRatio": 4.2105
   },
   {
     "id": "land-2019-08-13-魔都上海-10",
@@ -137,7 +164,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/10.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/10.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/10.webp",
+    "width": 2160,
+    "height": 990,
+    "aspectRatio": 2.1818
   },
   {
     "id": "land-2019-08-13-魔都上海-11",
@@ -151,7 +181,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/11.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/11.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/11.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2019-08-13-魔都上海-12",
@@ -165,7 +198,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/12.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/12.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/12.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2019-08-13-魔都上海-13",
@@ -179,7 +215,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/13.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/13.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/13.webp",
+    "width": 2160,
+    "height": 1144,
+    "aspectRatio": 1.8881
   },
   {
     "id": "land-2019-08-13-魔都上海-14",
@@ -193,7 +232,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/14.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/14.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/14.webp",
+    "width": 2160,
+    "height": 1426,
+    "aspectRatio": 1.5147
   },
   {
     "id": "land-2019-08-13-魔都上海-15",
@@ -207,7 +249,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/15.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/15.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/15.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2019-08-13-魔都上海-16",
@@ -221,7 +266,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/16.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/16.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/16.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2019-08-13-魔都上海-17",
@@ -235,7 +283,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/17.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/17.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/17.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2019-08-13-魔都上海-18",
@@ -249,6 +300,9 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/19-08/2019-08-13 魔都上海/thumbnails/18.webp",
-    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/18.webp"
+    "display": "public/gallery/landscape/19-08/2019-08-13 魔都上海/display/18.webp",
+    "width": 2160,
+    "height": 1496,
+    "aspectRatio": 1.4439
   }
 ]

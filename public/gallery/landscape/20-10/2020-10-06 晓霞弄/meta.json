@@ -11,6 +11,9 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/20-10/2020-10-06 晓霞弄/thumbnails/1.webp",
-    "display": "public/gallery/landscape/20-10/2020-10-06 晓霞弄/display/1.webp"
+    "display": "public/gallery/landscape/20-10/2020-10-06 晓霞弄/display/1.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   }
 ]

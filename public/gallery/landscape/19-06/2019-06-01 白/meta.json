@@ -10,6 +10,9 @@
       "抽象"
     ],
     "thumbnail": "public/gallery/landscape/19-06/2019-06-01 白/thumbnails/1.webp",
-    "display": "public/gallery/landscape/19-06/2019-06-01 白/display/1.webp"
+    "display": "public/gallery/landscape/19-06/2019-06-01 白/display/1.webp",
+    "width": 2160,
+    "height": 1944,
+    "aspectRatio": 1.1111
   }
 ]

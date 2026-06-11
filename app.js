@@ -46,34 +46,24 @@ createApp({
             return photos.value.filter(p => p.category === targetCategory);
         });
 
-        // 将数据按要求进行打包，相邻的单图放入同一个瀑布流 block，组图独立为一个 block
         const groupedFeed = computed(() => {
             let feed = [];
-            let currentMasonry = [];
+            let currentJustified = [];
             
             filteredPhotos.value.forEach(p => {
                 if (p.type === 'single') {
-                    currentMasonry.push(p);
+                    currentJustified.push(p);
                 } else {
-                    if (currentMasonry.length > 0) {
-                        const cols = Array.from({ length: colCount.value }, () => []);
-                        currentMasonry.forEach((mItem, idx) => {
-                            // 依次放入当前最短的列（近似为从左到右轮询）
-                            cols[idx % colCount.value].push(mItem);
-                        });
-                        feed.push({ type: 'masonry', cols: cols });
-                        currentMasonry = [];
+                    if (currentJustified.length > 0) {
+                        feed.push({ type: 'justified', items: currentJustified });
+                        currentJustified = [];
                     }
                     feed.push({ type: 'gallery', item: p });
                 }
             });
             // 扫尾工作
-            if (currentMasonry.length > 0) {
-                const cols = Array.from({ length: colCount.value }, () => []);
-                currentMasonry.forEach((mItem, idx) => {
-                    cols[idx % colCount.value].push(mItem);
-                });
-                feed.push({ type: 'masonry', cols: cols });
+            if (currentJustified.length > 0) {
+                feed.push({ type: 'justified', items: currentJustified });
             }
             return feed;
         });

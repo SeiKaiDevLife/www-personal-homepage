@@ -11,7 +11,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/thumbnails/1.webp",
-    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/1.webp"
+    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/1.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2023-10-17-之江文化中心-2",
@@ -25,7 +28,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/thumbnails/2.webp",
-    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/2.webp"
+    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/2.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-10-17-之江文化中心-3",
@@ -39,7 +45,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/thumbnails/3.webp",
-    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/3.webp"
+    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/3.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-10-17-之江文化中心-4",
@@ -53,7 +62,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/thumbnails/4.webp",
-    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/4.webp"
+    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/4.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-10-17-之江文化中心-5",
@@ -67,7 +79,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/thumbnails/5.webp",
-    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/5.webp"
+    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/5.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2023-10-17-之江文化中心-6",
@@ -81,7 +96,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/thumbnails/6.webp",
-    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/6.webp"
+    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/6.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-10-17-之江文化中心-7",
@@ -95,7 +113,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/thumbnails/7.webp",
-    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/7.webp"
+    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/7.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2023-10-17-之江文化中心-8",
@@ -109,7 +130,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/thumbnails/8.webp",
-    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/8.webp"
+    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/8.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2023-10-17-之江文化中心-9",
@@ -123,6 +147,9 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/thumbnails/9.webp",
-    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/9.webp"
+    "display": "public/gallery/landscape/23-10/2023-10-17 之江文化中心/display/9.webp",
+    "width": 1344,
+    "height": 2160,
+    "aspectRatio": 0.6222
   }
 ]

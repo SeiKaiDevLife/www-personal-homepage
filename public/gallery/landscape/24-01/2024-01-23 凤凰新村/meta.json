@@ -11,7 +11,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/24-01/2024-01-23 凤凰新村/thumbnails/1.webp",
-    "display": "public/gallery/landscape/24-01/2024-01-23 凤凰新村/display/1.webp"
+    "display": "public/gallery/landscape/24-01/2024-01-23 凤凰新村/display/1.webp",
+    "width": 2160,
+    "height": 1440,
+    "aspectRatio": 1.5
   },
   {
     "id": "land-2024-01-23-凤凰新村-2",
@@ -25,7 +28,10 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/24-01/2024-01-23 凤凰新村/thumbnails/2.webp",
-    "display": "public/gallery/landscape/24-01/2024-01-23 凤凰新村/display/2.webp"
+    "display": "public/gallery/landscape/24-01/2024-01-23 凤凰新村/display/2.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2024-01-23-凤凰新村-3",
@@ -39,6 +45,9 @@
       "街景"
     ],
     "thumbnail": "public/gallery/landscape/24-01/2024-01-23 凤凰新村/thumbnails/3.webp",
-    "display": "public/gallery/landscape/24-01/2024-01-23 凤凰新村/display/3.webp"
+    "display": "public/gallery/landscape/24-01/2024-01-23 凤凰新村/display/3.webp",
+    "width": 2160,
+    "height": 1441,
+    "aspectRatio": 1.499
   }
 ]

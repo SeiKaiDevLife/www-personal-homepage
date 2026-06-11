@@ -10,7 +10,10 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/20-10/2020-10-24 浙大之江校区/thumbnails/1.webp",
-    "display": "public/gallery/landscape/20-10/2020-10-24 浙大之江校区/display/1.webp"
+    "display": "public/gallery/landscape/20-10/2020-10-24 浙大之江校区/display/1.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   },
   {
     "id": "land-2020-10-24-浙大之江校区-2",
@@ -23,6 +26,9 @@
       "城市"
     ],
     "thumbnail": "public/gallery/landscape/20-10/2020-10-24 浙大之江校区/thumbnails/2.webp",
-    "display": "public/gallery/landscape/20-10/2020-10-24 浙大之江校区/display/2.webp"
+    "display": "public/gallery/landscape/20-10/2020-10-24 浙大之江校区/display/2.webp",
+    "width": 1440,
+    "height": 2160,
+    "aspectRatio": 0.6667
   }
 ]
