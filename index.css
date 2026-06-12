@@ -119,9 +119,9 @@ body, html {
 }
 .top-nav-item {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 2px;
-    color: var(--text-muted);
+    color: #ffffff;
     cursor: pointer;
     transition: all 0.3s ease;
     padding-bottom: 4px;
@@ -131,10 +131,10 @@ body, html {
 .top-header.scrolled .top-nav-item {
     text-shadow: none;
 }
-.top-nav-item:hover { color: var(--accent); }
+.top-nav-item:hover { color: #cccccc; }
 .top-nav-item.active {
-    color: var(--accent);
-    font-weight: 500;
+    color: #ffffff;
+    font-weight: 700;
 }
 .top-nav-item.active::after {
     content: '';
@@ -144,57 +144,42 @@ body, html {
     transform: translateX(-50%);
     width: 20px;
     height: 2px;
-    background-color: var(--accent);
+    background-color: #ffffff;
     border-radius: 2px;
 }
 
-/* ================= 悬浮导航栏 (L/P) ================= */
-.sticky-nav {
+/* ================= 幽灵按钮分类切换器 (L/P) ================= */
+.filter-nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 5%;
-    position: sticky;
-    top: 60px;
-    background: rgba(10, 10, 10, 0.85);
-    backdrop-filter: blur(12px);
-    z-index: 100;
-    border-bottom: 1px solid rgba(255,255,255,0.03);
-    margin-bottom: 40px;
+    gap: 30px;
+    margin: 40px auto 60px;
+    width: 100%;
 }
-.nav-menu {
-    display: flex;
-    gap: 40px;
-}
-.nav-item {
-    font-size: 14px;
-    font-weight: 300;
+.filter-btn {
+    padding: 12px 36px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
     letter-spacing: 3px;
-    color: var(--text-muted);
     cursor: pointer;
     transition: all 0.3s ease;
-    padding-bottom: 6px;
-    position: relative;
+    background: transparent;
+    text-transform: uppercase;
 }
-.nav-item:hover {
-    color: var(--accent);
+.filter-btn:hover {
+    border-color: rgba(255, 255, 255, 0.8);
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
 }
-.nav-item.active {
-    color: var(--accent);
-    font-weight: 500;
+.filter-btn.active {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+    font-weight: 600;
 }
-.nav-item.active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 24px;
-    height: 2px;
-    background-color: var(--accent);
-    border-radius: 2px;
-}
-
 main {
     padding: 0 5% 20px;
 }
