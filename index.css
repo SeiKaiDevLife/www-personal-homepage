@@ -39,14 +39,17 @@ body, html {
     background-size: cover;
     background-position: center calc(30% + var(--parallax-y, 0px));
     background-repeat: no-repeat;
+
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
 .hero::after {
     content: '';
     position: absolute;
     inset: 0;
     z-index: -1;
-    /* 使用稳定的叠加层替代 Mask 技术，解决滚动消失 Bug */
-    background: linear-gradient(to bottom, rgba(10,10,10,0.2) 0%, rgba(10,10,10,0.2) 50%, var(--bg) 100%);
+    /* 恢复 mask-image 技术，这样它可以透明过渡到任何底图，而不是死板地过渡到纯黑色 */
+    background: transparent;
     pointer-events: none;
 }
 .hero-avatar {
