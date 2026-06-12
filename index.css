@@ -53,13 +53,13 @@ body, html {
     pointer-events: none;
 }
 .hero-avatar {
-    width: 11.666vw;
-    height: 11.666vw;
-    margin-bottom: 2vw;
+    width: clamp(60px, 11.666vw, 140px);
+    height: clamp(60px, 11.666vw, 140px);
+    margin-bottom: clamp(12px, 2vw, 24px);
     border-radius: 50%;
     overflow: hidden;
-    border: 0.166vw solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 0.833vw 2.5vw rgba(0, 0, 0, 0.5);
+    border: clamp(1px, 0.166vw, 2px) solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 clamp(4px, 0.833vw, 10px) clamp(10px, 2.5vw, 30px) rgba(0, 0, 0, 0.5);
     transition: transform 0.4s ease, border-color 0.4s ease;
     animation: fadeInDown 0.8s ease-out;
     flex-shrink: 0;
@@ -79,21 +79,21 @@ body, html {
     to { opacity: 1; transform: translateY(0); }
 }
 .hero-logo {
-    height: 10vw;
+    height: clamp(40px, 7vw, 90px);
     object-fit: contain;
-    margin-bottom: 1.666vw;
-    filter: drop-shadow(0 0.833vw 2.5vw rgba(0,0,0,0.9));
+    margin-bottom: clamp(10px, 1.666vw, 20px);
+    filter: drop-shadow(0 clamp(4px, 0.833vw, 10px) clamp(10px, 2.5vw, 30px) rgba(0,0,0,0.9));
     animation: fadeInDown 0.8s ease-out;
     z-index: 1;
     flex-shrink: 0;
 }
 .hero-subtitle {
-    font-size: 0.916vw;
-    letter-spacing: 0.666vw;
+    font-size: clamp(8px, 0.916vw, 14px);
+    letter-spacing: clamp(4px, 0.666vw, 8px);
     color: #eee;
     text-transform: uppercase;
     font-weight: 300;
-    text-shadow: 0 0.333vw 0.833vw rgba(0,0,0,0.8);
+    text-shadow: 0 clamp(2px, 0.333vw, 4px) clamp(4px, 0.833vw, 10px) rgba(0,0,0,0.8);
 }
 
 
@@ -124,7 +124,7 @@ body.is-scrolled.filter-sticky .global-blur-bg {
 .top-header {
     background: transparent;
     border: none;
-    height: 5vw;
+    height: clamp(50px, 5vw, 60px);
     display: flex;
     align-items: center;
     position: fixed;
@@ -143,23 +143,24 @@ body.is-scrolled.filter-sticky .global-blur-bg {
 .top-nav-menu {
     display: flex;
     justify-content: center;
-    gap: 6.666vw;
-    width: 50vw;
+    gap: clamp(12px, 6.666vw, 80px);
+    width: clamp(300px, 90vw, 600px);
     margin: 0 auto;
 }
 .top-nav-item {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.166vw;
+    font-size: clamp(11px, 1.333vw, 16px);
     font-weight: 400;
-    letter-spacing: 0.166vw;
+    letter-spacing: clamp(1px, 0.166vw, 2px);
     color: #ffffff;
     cursor: pointer;
     transition: color 0.3s ease;
-    padding-bottom: 0.333vw;
+    padding-bottom: clamp(2px, 0.333vw, 4px);
     position: relative;
-    text-shadow: 0 0.166vw 0.666vw rgba(0,0,0,0.8);
+    text-shadow: 0 clamp(1px, 0.166vw, 2px) clamp(4px, 0.666vw, 8px) rgba(0,0,0,0.8);
+    white-space: nowrap;
 }
 /* Reserve space for bold text to prevent jitter */
 .top-nav-item::before {
