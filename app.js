@@ -72,7 +72,7 @@ createApp({
             window.addEventListener('resize', updateColCount);
             window.addEventListener('scroll', handleScroll, { passive: true });
             
-            const OSS_DOMAIN = "https://www-seikai.oss-cn-hangzhou.aliyuncs.com/";
+            const OSS_DOMAIN = "https://www-seikai.oss-cn-hangzhou.aliyuncs.com/lens/";
             const toOSS = (url) => {
                 if (!url || url.startsWith('http')) return url;
                 return OSS_DOMAIN + (url.startsWith('/') ? url.slice(1) : url);
