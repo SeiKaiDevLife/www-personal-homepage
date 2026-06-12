@@ -147,18 +147,27 @@ createApp({
             landscape: 0,
             portrait: 0
         };
-        const STICKY_THRESHOLD = 300;
+        
+        const getStickyThreshold = () => {
+            const heroEl = document.querySelector('.hero');
+            const headerEl = document.querySelector('.top-header');
+            if (heroEl && headerEl) {
+                return heroEl.offsetHeight - headerEl.offsetHeight;
+            }
+            return 300; // fallback
+        };
 
         watch(filter, (newVal, oldVal) => {
             if (currentPage.value === 'home') {
                 const currentY = window.scrollY;
                 savedScroll[oldVal] = currentY;
+                const threshold = getStickyThreshold();
 
-                if (currentY < STICKY_THRESHOLD) {
+                if (currentY < threshold) {
                     savedScroll[newVal] = currentY;
                 } else {
-                    if (savedScroll[newVal] < STICKY_THRESHOLD) {
-                        savedScroll[newVal] = STICKY_THRESHOLD;
+                    if (savedScroll[newVal] < threshold) {
+                        savedScroll[newVal] = threshold;
                     }
                 }
                 
