@@ -197,16 +197,16 @@ body.is-scrolled.filter-sticky .global-blur-bg {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: clamp(8px, 1.25vw, 15px);
     width: 100%;
     position: sticky;
-    top: 60px;
+    top: clamp(50px, 5vw, 60px);
     background: rgba(10, 10, 10, 0.7);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     z-index: 100;
-    padding: 15px 0;
-    margin-bottom: 30px;
+    padding: clamp(10px, 1.25vw, 15px) 0;
+    margin-bottom: clamp(15px, 2.5vw, 30px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     transition: background 0.2s, backdrop-filter 0.2s, border-color 0.2s;
 }
@@ -217,12 +217,12 @@ body.filter-sticky .filter-nav {
     border-bottom-color: transparent;
 }
 .filter-btn {
-    padding: 6px 18px;
+    padding: clamp(4px, 0.5vw, 6px) clamp(10px, 1.5vw, 18px);
     border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 20px;
+    border-radius: clamp(12px, 1.666vw, 20px);
     color: rgba(255, 255, 255, 0.4);
-    font-size: 11px;
-    letter-spacing: 2px;
+    font-size: clamp(11px, 1.333vw, 16px);
+    letter-spacing: clamp(1px, 0.166vw, 2px);
     cursor: pointer;
     transition: all 0.3s ease;
     background: transparent;
