@@ -118,15 +118,28 @@ body, html {
     width: 100%;
 }
 .top-nav-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
     color: #ffffff;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
     padding-bottom: 4px;
     position: relative;
     text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+/* Reserve space for bold text to prevent jitter */
+.top-nav-item::before {
+    content: attr(data-name);
+    font-weight: 700;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
 }
 .top-header.scrolled .top-nav-item {
     text-shadow: none;
@@ -148,37 +161,42 @@ body, html {
     border-radius: 2px;
 }
 
-/* ================= 幽灵按钮分类切换器 (L/P) ================= */
+/* ================= 弱化版悬浮分类标签 (L/P) ================= */
 .filter-nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    margin: 40px auto 60px;
+    gap: 15px;
     width: 100%;
+    position: sticky;
+    top: 60px;
+    background: var(--bg);
+    z-index: 100;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }
 .filter-btn {
-    padding: 12px 36px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 4px;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 13px;
-    letter-spacing: 3px;
+    padding: 6px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 11px;
+    letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.3s ease;
     background: transparent;
     text-transform: uppercase;
 }
 .filter-btn:hover {
-    border-color: rgba(255, 255, 255, 0.8);
-    color: #fff;
-    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
 }
 .filter-btn.active {
-    background: #fff;
-    color: #000;
-    border-color: #fff;
-    font-weight: 600;
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    background: transparent;
+    font-weight: 500;
 }
 main {
     padding: 0 5% 20px;
