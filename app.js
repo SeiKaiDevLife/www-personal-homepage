@@ -143,15 +143,39 @@ createApp({
             });
         };
 
-        const homeScrollY = ref(0);
+        const savedScroll = {
+            landscape: 0,
+            portrait: 0
+        };
+        const STICKY_THRESHOLD = 300;
+
+        watch(filter, (newVal, oldVal) => {
+            if (currentPage.value === 'home') {
+                const currentY = window.scrollY;
+                savedScroll[oldVal] = currentY;
+
+                if (currentY < STICKY_THRESHOLD) {
+                    savedScroll[newVal] = currentY;
+                } else {
+                    if (savedScroll[newVal] < STICKY_THRESHOLD) {
+                        savedScroll[newVal] = STICKY_THRESHOLD;
+                    }
+                }
+                
+                nextTick(() => {
+                    window.scrollTo({ top: savedScroll[newVal], behavior: 'instant' });
+                });
+            }
+        });
+
         watch(currentPage, (newVal, oldVal) => {
             if (oldVal === 'home') {
-                homeScrollY.value = window.scrollY;
+                savedScroll[filter.value] = window.scrollY;
             }
             
             nextTick(() => {
                 if (newVal === 'home') {
-                    window.scrollTo({ top: homeScrollY.value, behavior: 'instant' });
+                    window.scrollTo({ top: savedScroll[filter.value], behavior: 'instant' });
                 } else {
                     window.scrollTo(0, 0);
                 }
