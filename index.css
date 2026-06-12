@@ -580,7 +580,7 @@ main {
 .about-page {
     display: flex;
     justify-content: center;
-    padding: 100px 5% 50px;
+    padding: 100px 5% 0;
     animation: fadeInDown 0.8s ease;
 }
 .about-container {
@@ -622,7 +622,7 @@ main {
 }
 @media (max-width: 768px) {
     .about-page {
-        padding: 80px 5% 40px;
+        padding: 80px 5% 0;
     }
     .about-desc {
         text-align: left;
