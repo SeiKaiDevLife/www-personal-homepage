@@ -32,13 +32,12 @@
             <p class="hero-subtitle">Photography Collection</p>
         </div>
 
-        <!-- 居中悬浮导航栏 (L 和 P) -->
-        <nav class="sticky-nav" v-if="currentPage === 'home' && !activeGallery">
-            <div class="nav-menu">
-                <div class="nav-item" :class="{active: filter==='landscape'}" @click="filter='landscape'">LANDSCAPE</div>
-                <div class="nav-item" :class="{active: filter==='portrait'}" @click="filter='portrait'">PORTRAITS</div>
-            </div>
-        </nav>
+        <!-- 极简风格分类切换器 (L & P) -->
+        <div class="filter-nav" v-if="currentPage === 'home' && !activeGallery">
+            <span class="filter-item" :class="{active: filter==='landscape'}" @click="filter='landscape'">LANDSCAPE</span>
+            <span class="filter-separator">/</span>
+            <span class="filter-item" :class="{active: filter==='portrait'}" @click="filter='portrait'">PORTRAITS</span>
+        </div>
 
         <main>
             <!-- 沉浸式组图专属浏览页 (单列排布) -->
