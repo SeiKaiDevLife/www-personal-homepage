@@ -169,7 +169,7 @@ body, html {
     gap: 15px;
     width: 100%;
     position: sticky;
-    top: 60px;
+    top: 59px; /* 稍微向上偏移 1px 消除浏览器渲染导致的亚像素级缝隙 */
     background: rgba(5, 5, 5, 0.9);
     backdrop-filter: blur(12px);
     z-index: 100;
