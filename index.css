@@ -519,11 +519,9 @@ main {
 .lightbox-caption {
     margin-bottom: 30px;
     font-size: 13px;
-         a n i m a t i o n :   f a d e I n D o w n   0 . 6 s   e a s e ; 
- } 
- . p l a c e h o l d e r - p a g e   h 2   { 
-         f o n t - s i z e :   3 2 p x ; 
-         m a r g i n - b o t t o m :   2 0 p x ; 
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 1px;
+}
 
 /* ================= 移动端响应式 ================= */
 @media (max-width: 1200px) {
