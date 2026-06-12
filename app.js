@@ -3,6 +3,7 @@ const { createApp, ref, computed, onMounted, nextTick } = Vue;
 createApp({
     setup() {
         const photos = ref([]);
+        const masterpieces = ref([]);
         const filter = ref('landscape'); // landscape, portrait
         const currentPage = ref('home'); // home, masterpieces, gear, about
         
@@ -53,6 +54,13 @@ createApp({
                 photos.value = await res.json();
             } catch(e) {
                 console.error("加载摄影数据失败, 请确保已经使用 python 脚本上传了照片", e);
+            }
+
+            try {
+                const resM = await fetch('data/masterpieces.json?' + new Date().getTime());
+                masterpieces.value = await resM.json();
+            } catch(e) {
+                console.error("加载代表作数据失败", e);
             }
         });
 
@@ -156,8 +164,13 @@ createApp({
             return arr;
         });
 
+        const sortedMasterpieces = computed(() => {
+            return [...masterpieces.value].sort((a, b) => new Date(b.date) - new Date(a.date));
+        });
+
         return {
             photos, 
+            masterpieces: sortedMasterpieces,
             filter, 
             groupedFeed, 
             itemDateFormatter,

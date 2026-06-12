@@ -997,6 +997,19 @@
     "aspectRatio": 0.6667
   },
   {
+    "id": "land-2024-03-12-西湖-1",
+    "type": "single",
+    "title": "西湖",
+    "date": "2024-03-12",
+    "location": "杭州",
+    "category": "L",
+    "tags": [
+      "自然"
+    ],
+    "thumbnail": "public/gallery/landscape/24-03/2024-03-12 西湖/thumbnails/1.webp",
+    "display": "public/gallery/landscape/24-03/2024-03-12 西湖/display/1.webp"
+  },
+  {
     "id": "land-2024-01-25-魔都上海-1",
     "type": "single",
     "title": "魔都上海",
@@ -2884,6 +2897,19 @@
     "width": 1439,
     "height": 2160,
     "aspectRatio": 0.6662
+  },
+  {
+    "id": "land-2022-05-11-望仙阁-1",
+    "type": "single",
+    "title": "望仙阁",
+    "date": "2022-05-11",
+    "location": "杭州",
+    "category": "L",
+    "tags": [
+      "城市"
+    ],
+    "thumbnail": "public/gallery/landscape/22-05/2022-05-11 望仙阁/thumbnails/1.webp",
+    "display": "public/gallery/landscape/22-05/2022-05-11 望仙阁/display/1.webp"
   },
   {
     "id": "land-2021-10-28-玉泉的秋天-1",

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SeiKai | Photography</title>
-    <link rel="stylesheet" href="index.css?v=50">
+    <link rel="stylesheet" href="index.css?v=51">
     <!-- 引入 Vue 3 CDN -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     <!-- 引入高级字体 -->
@@ -106,10 +106,34 @@
                 </template>
             </div>
 
-            <!-- 代表作页面占位符 -->
-            <div class="placeholder-page" v-else-if="currentPage === 'masterpieces'">
-                <h2>Masterpieces</h2>
-                <p>建设中，敬请期待...</p>
+            <!-- 代表作页面 -->
+            <div class="masterpieces-page" v-else-if="currentPage === 'masterpieces'">
+                <div class="m-header">
+                    <h2>MASTERPIECES</h2>
+                    <p>Proudest moments frozen in time</p>
+                </div>
+                <div class="m-list">
+                    <div class="m-item" v-for="m in masterpieces" :key="m.id">
+                        <div class="m-img-wrapper">
+                            <img :src="m.url" alt="Masterpiece" loading="lazy">
+                        </div>
+                        <div class="m-info">
+                            <div class="m-meta">
+                                <span class="m-date">{{ m.date }}</span>
+                                <span class="m-dot">·</span>
+                                <span class="m-loc">{{ m.location }}</span>
+                            </div>
+                            <div class="m-section">
+                                <h4>SHOOTING</h4>
+                                <p>{{ m.shooting_idea }}</p>
+                            </div>
+                            <div class="m-section">
+                                <h4>POST-PROCESSING</h4>
+                                <p>{{ m.post_idea }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- 拍摄设备页面 -->
@@ -225,7 +249,7 @@
             </div>
         </div>
     </div>
-    <script src="app.js?v=9"></script>
+    <script src="app.js?v=11"></script>
 
     <!-- Sticky Filter Background Unifier -->
     <script>

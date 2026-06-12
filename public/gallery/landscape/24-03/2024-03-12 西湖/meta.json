@@ -1,0 +1,15 @@
+[
+  {
+    "id": "land-2024-03-12-西湖-1",
+    "type": "single",
+    "title": "西湖",
+    "date": "2024-03-12",
+    "location": "杭州",
+    "category": "L",
+    "tags": [
+      "自然"
+    ],
+    "thumbnail": "public/gallery/landscape/24-03/2024-03-12 西湖/thumbnails/1.webp",
+    "display": "public/gallery/landscape/24-03/2024-03-12 西湖/display/1.webp"
+  }
+]

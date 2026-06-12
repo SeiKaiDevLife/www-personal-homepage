@@ -729,3 +729,111 @@ main {
         padding: 80px 5% 0;
     }
 }
+
+/* ================= 代表作 (Masterpieces) ================= */
+.masterpieces-page {
+    padding: 100px 5% 50px;
+    animation: fadeInDown 0.8s ease;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.m-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.m-header h2 {
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 500;
+    letter-spacing: 6px;
+    color: #fff;
+    margin: 0 0 10px 0;
+}
+.m-header p {
+    font-size: clamp(13px, 1.2vw, 15px);
+    font-weight: 300;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    margin: 0;
+}
+.m-list {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+.m-item {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: flex-start;
+}
+.m-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.m-img-wrapper {
+    flex: 7;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+    background: rgba(255, 255, 255, 0.02);
+}
+.m-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.m-info {
+    flex: 3;
+    position: sticky;
+    top: 100px;
+    padding: 20px 0;
+}
+.m-meta {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.m-dot {
+    color: #555;
+}
+.m-section {
+    margin-bottom: 30px;
+}
+.m-section h4 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #fff;
+    margin: 0 0 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 8px;
+    display: inline-block;
+}
+.m-section p {
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 300;
+    color: #bbb;
+    margin: 0;
+}
+@media (max-width: 992px) {
+    .m-item, .m-item:nth-child(even) {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .m-info {
+        position: static;
+        padding: 0;
+    }
+    .m-list {
+        gap: 80px;
+    }
+}
+@media (max-width: 768px) {
+    .masterpieces-page {
+        padding: 80px 5% 0;
+    }
+}
