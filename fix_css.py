@@ -6,7 +6,7 @@ with codecs.open('index.css', 'r', 'utf-8') as f:
 
 # Replace .hero-logo
 content = re.sub(
-    r'\.hero-logo\s*\{.*?\z-index:\s*1;\s*\}',
+    r'\.hero-logo\s*\{.*?z-index:\s*1;\s*\}',
     '.hero-logo {\n    height: 180px;\n    object-fit: contain;\n    margin-bottom: 20px;\n    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.9));\n    animation: fadeInDown 0.8s ease-out;\n    z-index: 1;\n}',
     content,
     flags=re.DOTALL
@@ -46,8 +46,8 @@ content = re.sub(
 
 # Clean up garbled text
 content = re.sub(
-    r'font-size:\s*13px;\n\s*a\s*n\s*i\s*m\s*a\s*t\s*i\s*o\s*n\s*:.*?/\*\s*=================\s*移动端响应式\s*=================\s*\*/',
-    'font-size: 13px;\n}\n\n/* ================= 移动端响应式 ================= */',
+    r'font-size:\s*13px;\n.*?(/\*\s*=================\s*移动端响应式\s*=================\s*\*/)',
+    r'font-size: 13px;\n}\n\n\1',
     content,
     flags=re.DOTALL
 )
