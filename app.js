@@ -8,6 +8,7 @@ createApp({
         
         const activeGallery = ref(null);
         const savedScrollY = ref(0); // 记录滚动位置
+        const isScrolled = ref(false); // 是否发生滚动
         
         const lightbox = ref({
             isOpen: false,
@@ -29,10 +30,12 @@ createApp({
             }
         };
 
-        // 视差滚动特效
+        // 视差滚动特效及头部透明度切换
         const handleScroll = () => {
+            const y = window.scrollY;
+            isScrolled.value = y > 50;
+            
             if (!activeGallery.value) { // 仅在首页展示开屏时计算视差
-                const y = window.scrollY;
                 if (y < window.innerHeight) {
                     document.documentElement.style.setProperty('--parallax-y', `${y * 0.5}px`);
                 }
@@ -164,6 +167,7 @@ createApp({
             closeLightbox,
             filter,
             currentPage,
+            isScrolled,
             activeGallery, 
             openGallery, 
             closeGallery, 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SeiKai | Photography</title>
-    <link rel="stylesheet" href="index.css?v=19">
+    <link rel="stylesheet" href="index.css?v=20">
     <!-- 引入 Vue 3 CDN -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     <!-- 引入高级字体 -->
@@ -14,12 +14,12 @@
     <div id="app" v-cloak>
         
         <!-- 全局顶部导航栏 -->
-        <header class="top-header">
+        <header class="top-header" :class="{ 'scrolled': isScrolled }">
             <div class="top-nav-menu">
-                <div class="top-nav-item" :class="{active: currentPage==='home'}" @click="currentPage='home'; activeGallery=null;">首页</div>
-                <div class="top-nav-item" :class="{active: currentPage==='masterpieces'}" @click="currentPage='masterpieces'; activeGallery=null;">代表作</div>
-                <div class="top-nav-item" :class="{active: currentPage==='gear'}" @click="currentPage='gear'; activeGallery=null;">器材设备</div>
-                <div class="top-nav-item" :class="{active: currentPage==='about'}" @click="currentPage='about'; activeGallery=null;">关于我</div>
+                <div class="top-nav-item" :class="{active: currentPage==='home'}" @click="currentPage='home'; activeGallery=null;">HOME</div>
+                <div class="top-nav-item" :class="{active: currentPage==='masterpieces'}" @click="currentPage='masterpieces'; activeGallery=null;">MASTERPIECES</div>
+                <div class="top-nav-item" :class="{active: currentPage==='gear'}" @click="currentPage='gear'; activeGallery=null;">GEAR</div>
+                <div class="top-nav-item" :class="{active: currentPage==='about'}" @click="currentPage='about'; activeGallery=null;">ABOUT ME</div>
             </div>
         </header>
 
@@ -163,6 +163,6 @@
             </div>
         </div>
     </div>
-    <script src="app.js?v=8"></script>
+    <script src="app.js?v=9"></script>
 </body>
 </html>
