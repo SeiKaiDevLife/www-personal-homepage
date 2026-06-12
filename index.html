@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SeiKai | Photography</title>
-    <link rel="stylesheet" href="index.css?v=34">
+    <link rel="stylesheet" href="index.css?v=33">
     <!-- 引入 Vue 3 CDN -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     <!-- 引入高级字体 -->
@@ -162,22 +162,5 @@
         </div>
     </div>
     <script src="app.js?v=9"></script>
-
-    <!-- Sticky Filter Background Unifier -->
-    <script>
-        window.addEventListener('scroll', () => {
-            const filterNav = document.querySelector('.filter-nav');
-            if (filterNav) {
-                if (filterNav.getBoundingClientRect().top <= 61) {
-                    document.body.classList.add('filter-sticky');
-                    document.body.style.setProperty('--filter-height', filterNav.offsetHeight + 'px');
-                } else {
-                    document.body.classList.remove('filter-sticky');
-                }
-            } else {
-                document.body.classList.remove('filter-sticky');
-            }
-        });
-    </script>
 </body>
 </html>
