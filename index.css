@@ -786,6 +786,7 @@ main {
     cursor: default;
 }
 .m-thumbs {
+    position: relative;
     display: flex;
     gap: 15px;
     overflow-x: auto;
@@ -930,8 +931,18 @@ main {
     .m-nav-arrow {
         font-size: 2rem;
     }
+    .m-thumb-nav {
+        display: none;
+    }
+    .m-thumbs-wrapper {
+        padding: 10px;
+        gap: 10px;
+    }
+    .m-thumbs {
+        gap: 10px;
+    }
     .m-thumb {
-        flex: 0 0 calc((100% - 45px) / 4);
+        flex: 0 0 calc(25% - 7.5px); /* 确保准确显示4个 */
         height: 48px;
     }
 }
