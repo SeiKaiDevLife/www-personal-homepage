@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SeiKai | Photography</title>
-    <link rel="stylesheet" href="index.css?v=24">
+    <link rel="stylesheet" href="index.css?v=26">
     <!-- 引入 Vue 3 CDN -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     <!-- 引入高级字体 -->
@@ -32,11 +32,10 @@
             <p class="hero-subtitle">Photography Collection</p>
         </div>
 
-        <!-- 极简风格分类切换器 (L & P) -->
+                <!-- 幽灵按钮风格分类切换器 (L & P) -->
         <div class="filter-nav" v-if="currentPage === 'home' && !activeGallery">
-            <span class="filter-item" :class="{active: filter==='landscape'}" @click="filter='landscape'">LANDSCAPE</span>
-            <span class="filter-separator">/</span>
-            <span class="filter-item" :class="{active: filter==='portrait'}" @click="filter='portrait'">PORTRAITS</span>
+            <button class="filter-btn" :class="{active: filter==='landscape'}" @click="filter='landscape'">LANDSCAPE</button>
+            <button class="filter-btn" :class="{active: filter==='portrait'}" @click="filter='portrait'">PORTRAITS</button>
         </div>
 
         <main>
