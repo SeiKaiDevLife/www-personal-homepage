@@ -628,3 +628,104 @@ main {
         text-align: left;
     }
 }
+
+/* ================= 器材 (Gear) ================= */
+.gear-page {
+    padding: 100px 5% 50px;
+    animation: fadeInDown 0.8s ease;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.gear-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.gear-title {
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 500;
+    letter-spacing: 6px;
+    color: #fff;
+    margin: 0 0 10px 0;
+}
+.gear-subtitle {
+    font-size: clamp(13px, 1.2vw, 15px);
+    font-weight: 300;
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    margin: 0;
+}
+.gear-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+.gear-category {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    padding: 30px;
+    transition: transform 0.4s ease, background 0.4s ease;
+}
+.gear-category:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.04);
+}
+.gear-category-title {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: #fff;
+    margin: 0 0 24px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 12px;
+}
+.gear-sub-category {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0 0 12px 0;
+    letter-spacing: 2px;
+}
+.mt-sub {
+    margin-top: 24px;
+}
+.gear-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.gear-list li {
+    font-size: 14px;
+    font-weight: 300;
+    color: #bbb;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 12px;
+    transition: color 0.3s ease;
+}
+.gear-list li:last-child {
+    margin-bottom: 0;
+}
+.gear-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: background 0.3s ease;
+}
+.gear-list li:hover {
+    color: #fff;
+}
+.gear-list li:hover::before {
+    background: #fff;
+}
+@media (max-width: 768px) {
+    .gear-page {
+        padding: 80px 5% 0;
+    }
+}

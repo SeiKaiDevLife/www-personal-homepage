@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SeiKai | Photography</title>
-    <link rel="stylesheet" href="index.css?v=49">
+    <link rel="stylesheet" href="index.css?v=50">
     <!-- 引入 Vue 3 CDN -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     <!-- 引入高级字体 -->
@@ -112,10 +112,61 @@
                 <p>建设中，敬请期待...</p>
             </div>
 
-            <!-- 拍摄设备页面占位符 -->
-            <div class="placeholder-page" v-else-if="currentPage === 'gear'">
-                <h2>Gear</h2>
-                <p>建设中，敬请期待...</p>
+            <!-- 拍摄设备页面 -->
+            <div class="gear-page" v-else-if="currentPage === 'gear'">
+                <div class="gear-header">
+                    <h2 class="gear-title">GEAR LOG</h2>
+                    <p class="gear-subtitle">The tools that shape my vision</p>
+                </div>
+                <div class="gear-grid">
+                    <div class="gear-category">
+                        <div class="gear-category-title">CAMERAS</div>
+                        <ul class="gear-list">
+                            <li>Sony Alpha 7C II</li>
+                            <li>Canon EOS 200D</li>
+                            <li>Sony Cyber-shot DSC-RX100 VII</li>
+                            <li>Leica D-Lux 5</li>
+                        </ul>
+                    </div>
+
+                    <div class="gear-category">
+                        <div class="gear-category-title">LENSES</div>
+                        <div class="gear-sub-category">Sony E-Mount</div>
+                        <ul class="gear-list">
+                            <li>Sigma 50mm f/1.4 DG DN Art</li>
+                            <li>Tamron 17-28mm f/2.8 Di III RXD</li>
+                            <li>Tamron 28-75mm f/2.8 Di III VXD G2</li>
+                            <li>Tamron 50-300mm f/4.5-6.3 Di III VC VXD</li>
+                        </ul>
+                        <div class="gear-sub-category mt-sub">Canon EF-Mount</div>
+                        <ul class="gear-list">
+                            <li>Sigma 17-50mm f/2.8 EX DC OS HSM</li>
+                            <li>Yongnuo YN50mm f/1.8 II</li>
+                            <li>Canon EF-S 10-18mm f/4.5-5.6 IS STM</li>
+                            <li>Canon EF 100-300mm f/4.5-5.6 USM</li>
+                        </ul>
+                    </div>
+
+                    <div class="gear-category">
+                        <div class="gear-category-title">LIGHTING</div>
+                        <ul class="gear-list">
+                            <li>Godox V850II Flash</li>
+                            <li>Godox V860III Flash</li>
+                            <li>Godox AD200Pro II Pocket Flash</li>
+                            <li>Godox X3 Wireless Trigger</li>
+                        </ul>
+                    </div>
+
+                    <div class="gear-category">
+                        <div class="gear-category-title">STUDIO & SUPPORT</div>
+                        <ul class="gear-list">
+                            <li>Leaplight LYQ3 Tripod</li>
+                            <li>QZSD Q555 Tripod</li>
+                            <li>QZSD SL285 Light Stand</li>
+                            <li>Tarion HE-60F Softbox</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <!-- 关于我页面 -->
