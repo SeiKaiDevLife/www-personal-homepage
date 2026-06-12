@@ -72,17 +72,45 @@ createApp({
             window.addEventListener('resize', updateColCount);
             window.addEventListener('scroll', handleScroll, { passive: true });
             
+            const OSS_DOMAIN = "https://www-seikai.oss-cn-hangzhou.aliyuncs.com/";
+            const toOSS = (url) => {
+                if (!url || url.startsWith('http')) return url;
+                return OSS_DOMAIN + (url.startsWith('/') ? url.slice(1) : url);
+            };
+
             try {
-                // 读取 JSON 数据（附加时间戳防止 GitHub Pages 缓存死数据）
                 const res = await fetch('data/photos.json?' + new Date().getTime());
-                photos.value = await res.json();
+                let rawPhotos = await res.json();
+                
+                rawPhotos.forEach(p => {
+                    if (p.type === 'gallery' && p.layout) {
+                        for (let key in p.layout) {
+                            if (p.layout[key].thumbnail) p.layout[key].thumbnail = toOSS(p.layout[key].thumbnail);
+                            if (p.layout[key].display) p.layout[key].display = toOSS(p.layout[key].display);
+                        }
+                        if (p.others) {
+                            p.others.forEach(o => {
+                                if (o.thumbnail) o.thumbnail = toOSS(o.thumbnail);
+                                if (o.display) o.display = toOSS(o.display);
+                            });
+                        }
+                    } else if (p.type === 'single') {
+                        if (p.thumbnail) p.thumbnail = toOSS(p.thumbnail);
+                        if (p.display) p.display = toOSS(p.display);
+                    }
+                });
+                photos.value = rawPhotos;
             } catch(e) {
                 console.error("加载摄影数据失败, 请确保已经使用 python 脚本上传了照片", e);
             }
 
             try {
                 const resM = await fetch('data/masterpieces.json?' + new Date().getTime());
-                masterpieces.value = await resM.json();
+                let rawMasterpieces = await resM.json();
+                rawMasterpieces.forEach(m => {
+                    if (m.url) m.url = toOSS(m.url);
+                });
+                masterpieces.value = rawMasterpieces;
             } catch(e) {
                 console.error("加载代表作数据失败", e);
             }

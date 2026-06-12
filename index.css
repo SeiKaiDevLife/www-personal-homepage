@@ -35,7 +35,7 @@ body, html {
     position: absolute;
     inset: 0;
     z-index: -2;
-    background-image: url('public/hero-bg.webp');
+    background-image: url('https://www-seikai.oss-cn-hangzhou.aliyuncs.com/public/hero-bg.webp');
     background-size: cover;
     background-position: center calc(30% + var(--parallax-y, 0px));
     background-repeat: no-repeat;
