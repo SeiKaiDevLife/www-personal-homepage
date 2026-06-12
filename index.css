@@ -121,7 +121,7 @@ body, html {
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 2px;
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.65); /* Made brighter to prevent shadow from overwhelming it */
     cursor: pointer;
     transition: all 0.3s ease;
     padding-bottom: 4px;
@@ -129,48 +129,10 @@ body, html {
     text-shadow: 0 2px 8px rgba(0,0,0,0.8);
 }
 .top-header.scrolled .top-nav-item {
-    text-shadow: none;
-}
-.top-nav-item:hover { color: var(--accent); }
-.top-nav-item.active {
-    color: var(--accent);
-    font-weight: 500;
-}
-.top-nav-item.active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 20px;
-    height: 2px;
-    background-color: var(--accent);
-    border-radius: 2px;
-}
-
-/* ================= 悬浮导航栏 (L/P) ================= */
-.sticky-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 5%;
-    position: sticky;
-    top: 60px;
-    background: rgba(10, 10, 10, 0.85);
-    backdrop-filter: blur(12px);
-    z-index: 100;
-    border-bottom: 1px solid rgba(255,255,255,0.03);
-    margin-bottom: 40px;
-}
-.nav-menu {
-    display: flex;
-    gap: 40px;
-}
-.nav-item {
     font-size: 14px;
     font-weight: 300;
-    letter-spacing: 3px;
-    color: var(--text-muted);
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.65); /* Made brighter to prevent shadow from overwhelming it */
     cursor: pointer;
     transition: all 0.3s ease;
     padding-bottom: 6px;
