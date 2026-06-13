@@ -909,7 +909,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
 }
 .m-section {
@@ -939,12 +939,14 @@ main {
     display: inline-block;
 }
 .m-section p {
+    display: inline-block;
     font-size: 14px;
     line-height: 1.8;
     font-weight: 300;
     color: #bbb;
     margin: 0;
     text-align: left;
+    max-width: 100%;
 }
 @media (max-width: 768px) {
     .m-info-grid {
