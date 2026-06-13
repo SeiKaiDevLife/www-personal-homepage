@@ -57,16 +57,6 @@
     "category": "L",
     "thumbnail": "public/gallery/landscape/21-04/2021-04-05 长春/6.webp",
     "display": "public/gallery/landscape/21-04/2021-04-05 长春/6.webp",
-    "aspectRatio": 0.6396
-  },
-  {
-    "id": "land-2021-04-05-长春-7",
-    "type": "single",
-    "date": "2021-04-05",
-    "location": "长春",
-    "category": "L",
-    "thumbnail": "public/gallery/landscape/21-04/2021-04-05 长春/7.webp",
-    "display": "public/gallery/landscape/21-04/2021-04-05 长春/7.webp",
     "aspectRatio": 1.5004
   }
 ]
