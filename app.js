@@ -2,6 +2,49 @@ const { createApp, ref, computed, onMounted, nextTick, watch } = Vue;
 
 createApp({
     setup() {
+        const OSS_DOMAIN = "https://www-seikai.oss-cn-hangzhou.aliyuncs.com/lens/";
+        const dpr = ref(window.devicePixelRatio || 1);
+        const winW = ref(window.innerWidth);
+
+        const toOSS = (url, type) => {
+            if (!url || url.startsWith('http')) return url;
+            let fullUrl = OSS_DOMAIN + (url.startsWith('/') ? url.slice(1) : url);
+            
+            let screenW = winW.value;
+            let r = dpr.value;
+            
+            if (type === 'thumb') {
+                const cols = screenW < 768 ? 1 : (screenW < 1024 ? 2 : 3);
+                const thumbW = Math.ceil((screenW / cols) * r / 100) * 100;
+                return fullUrl + `?x-oss-process=image/resize,w_${thumbW}`;
+            } else if (type === 'disp') {
+                const dispW = Math.ceil(screenW * r / 100) * 100;
+                return fullUrl + `?x-oss-process=image/resize,w_${dispW}`;
+            }
+            return fullUrl;
+        };
+
+        const dynamicImages = computed(() => {
+            const w = winW.value;
+            const r = dpr.value;
+            
+            let avatarW = Math.max(60, Math.min(140, w * 0.11666));
+            let avatarReqW = Math.ceil(avatarW * r / 100) * 100;
+            if (avatarReqW < 100) avatarReqW = 100;
+
+            let qrReqW = Math.ceil(150 * r / 100) * 100;
+            
+            let aboutW = Math.min(600, w - 40); 
+            let aboutReqW = Math.ceil(aboutW * r / 100) * 100;
+
+            return {
+                avatar: `${OSS_DOMAIN}public/avatar.webp?x-oss-process=image/resize,w_${avatarReqW}`,
+                qrcode: `${OSS_DOMAIN}public/qrcode.webp?x-oss-process=image/resize,w_${qrReqW}`,
+                xiaohongshu: `${OSS_DOMAIN}public/xiaohongshu-qrcode.webp?x-oss-process=image/resize,w_${qrReqW}`,
+                aboutMe: `${OSS_DOMAIN}public/about_me.webp?x-oss-process=image/resize,w_${aboutReqW}`,
+                logo: `${OSS_DOMAIN}public/logo.png`
+            };
+        });
         const photos = ref([]);
         const masterpieces = ref([]);
         const filter = ref('landscape'); // landscape, portrait
@@ -104,49 +147,7 @@ createApp({
             });
             window.addEventListener('scroll', handleScroll, { passive: true });
             
-            const OSS_DOMAIN = "https://www-seikai.oss-cn-hangzhou.aliyuncs.com/lens/";
-            const dpr = ref(window.devicePixelRatio || 1);
-            const winW = ref(window.innerWidth);
 
-            const toOSS = (url, type) => {
-                if (!url || url.startsWith('http')) return url;
-                let fullUrl = OSS_DOMAIN + (url.startsWith('/') ? url.slice(1) : url);
-                
-                let screenW = winW.value;
-                let r = dpr.value;
-                
-                if (type === 'thumb') {
-                    const cols = screenW < 768 ? 1 : (screenW < 1024 ? 2 : 3);
-                    const thumbW = Math.ceil((screenW / cols) * r / 100) * 100;
-                    return fullUrl + `?x-oss-process=image/resize,w_${thumbW}`;
-                } else if (type === 'disp') {
-                    const dispW = Math.ceil(screenW * r / 100) * 100;
-                    return fullUrl + `?x-oss-process=image/resize,w_${dispW}`;
-                }
-                return fullUrl;
-            };
-
-            const dynamicImages = computed(() => {
-                const w = winW.value;
-                const r = dpr.value;
-                
-                let avatarW = Math.max(60, Math.min(140, w * 0.11666));
-                let avatarReqW = Math.ceil(avatarW * r / 100) * 100;
-                if (avatarReqW < 100) avatarReqW = 100;
-
-                let qrReqW = Math.ceil(150 * r / 100) * 100;
-                
-                let aboutW = Math.min(600, w - 40); 
-                let aboutReqW = Math.ceil(aboutW * r / 100) * 100;
-
-                return {
-                    avatar: `${OSS_DOMAIN}public/avatar.webp?x-oss-process=image/resize,w_${avatarReqW}`,
-                    qrcode: `${OSS_DOMAIN}public/qrcode.webp?x-oss-process=image/resize,w_${qrReqW}`,
-                    xiaohongshu: `${OSS_DOMAIN}public/xiaohongshu-qrcode.webp?x-oss-process=image/resize,w_${qrReqW}`,
-                    aboutMe: `${OSS_DOMAIN}public/about_me.webp?x-oss-process=image/resize,w_${aboutReqW}`,
-                    logo: `${OSS_DOMAIN}public/logo.png`
-                };
-            });
 
             try {
                 const res = await fetch('data/photos.json?' + new Date().getTime());
