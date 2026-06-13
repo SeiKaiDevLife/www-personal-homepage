@@ -907,8 +907,13 @@ main {
 }
 .m-info-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.m-section {
+    text-align: center;
 }
 .m-meta {
     font-size: 13px;
@@ -939,10 +944,10 @@ main {
     font-weight: 300;
     color: #bbb;
     margin: 0;
+    text-align: left;
 }
 @media (max-width: 768px) {
     .m-info-grid {
-        grid-template-columns: 1fr;
         gap: 20px;
     }
     .m-nav-zone {
