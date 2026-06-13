@@ -29,6 +29,8 @@ body, html {
     text-align: center;
     overflow: hidden;
     z-index: 1; /* 创建局部层叠上下文，防止伪元素的负层级跑到 body 下面去 */
+    padding-top: clamp(50px, 5vw, 60px); /* 抵消顶部固定导航栏的视觉遮挡 */
+    box-sizing: border-box;
 }
 .hero::before {
     content: '';
