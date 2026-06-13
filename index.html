@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SeiKai | Photography</title>
-    <link rel="stylesheet" href="index.css?v=59">
+    <link rel="stylesheet" href="index.css?v=60">
     <!-- 引入 Vue 3 CDN -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     <!-- 引入高级字体 -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="app" v-cloak>
+    <div id="app" :class="{'is-subpage': currentPage !== 'home' || activeGallery}" v-cloak>
         <!-- Unified Blur Background -->
         <div class="global-blur-bg"></div>
         
@@ -283,7 +283,7 @@
             </div>
         </div>
     </div>
-    <script src="app.js?v=20"></script>
+    <script src="app.js?v=21"></script>
 
     <!-- Sticky Filter Background Unifier -->
     <script>

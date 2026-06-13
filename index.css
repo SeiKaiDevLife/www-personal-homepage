@@ -103,17 +103,27 @@ body, html {
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: clamp(50px, 5vw, 60px);
     opacity: var(--nav-blur-progress, 0);
     background: rgba(10, 10, 10, 0.7);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     z-index: 50;
     pointer-events: none;
-    transition: height 0.3s ease;
+    transition: height 0.3s ease, opacity 0.3s ease, background 0.3s ease;
 }
 body.filter-sticky .global-blur-bg {
-    height: calc(60px + var(--filter-height, 58px));
+    height: calc(clamp(50px, 5vw, 60px) + var(--filter-height, 58px));
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ================= 子页面实黑导航栏覆盖 ================= */
+#app.is-subpage .global-blur-bg {
+    opacity: 1 !important;
+    background: #000 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    height: clamp(50px, 5vw, 60px) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -385,7 +395,7 @@ main {
     margin: 40px auto 0;
     animation: fadeSlideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
-.gallery-header { margin-top: 100px; text-align: center; margin-bottom: 80px; }
+.gallery-header { margin-top: clamp(140px, 15vw, 160px); text-align: center; margin-bottom: 80px; }
 .gallery-header h1 { font-size: 40px; margin: 0 0 16px; font-weight: 600; }
 .gallery-header p { color: var(--text-muted); margin: 0; letter-spacing: 1px; font-weight: 300;}
 
@@ -398,7 +408,7 @@ main {
     font-size: 14px;
     letter-spacing: 1px;
     position: fixed;
-    top: 0;
+    top: clamp(50px, 5vw, 60px);
     left: 0;
     width: 100%;
     z-index: 90;
