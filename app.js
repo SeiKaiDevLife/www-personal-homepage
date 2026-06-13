@@ -13,10 +13,19 @@ createApp({
             let screenW = winW.value;
             let r = dpr.value;
             
-            if (type === 'thumb') {
+            if (type === 'thumb_L') {
+                let targetHeight = 280;
+                if (screenW < 480) targetHeight = 80;
+                else if (screenW < 768) targetHeight = 140;
+                else if (screenW < 1024) targetHeight = 220;
+                
+                const reqH = Math.ceil(targetHeight * r / 100) * 100;
+                return fullUrl + `?x-oss-process=image/resize,h_${reqH}`;
+            } else if (type === 'thumb_P') {
                 const cols = screenW < 768 ? 1 : (screenW < 1024 ? 2 : 3);
-                const thumbW = Math.ceil((screenW / cols) * r / 100) * 100;
-                return fullUrl + `?x-oss-process=image/resize,w_${thumbW}`;
+                let cellW = screenW < 900 ? screenW / cols : 300;
+                const thumbW = Math.ceil((cellW * 2) * r / 100) * 100;
+                return fullUrl + `?x-oss-process=image/resize,m_mfit,w_${thumbW},h_${thumbW}`;
             } else if (type === 'disp') {
                 const dispW = Math.ceil(screenW * r / 100) * 100;
                 return fullUrl + `?x-oss-process=image/resize,w_${dispW}`;
@@ -156,17 +165,17 @@ createApp({
                 rawPhotos.forEach(p => {
                     if (p.type === 'gallery' && p.layout) {
                         for (let key in p.layout) {
-                            if (p.layout[key].thumbnail) p.layout[key].thumbnail = toOSS(p.layout[key].thumbnail, 'thumb');
+                            if (p.layout[key].thumbnail) p.layout[key].thumbnail = toOSS(p.layout[key].thumbnail, 'thumb_P');
                             if (p.layout[key].display) p.layout[key].display = toOSS(p.layout[key].display, 'disp');
                         }
                         if (p.others) {
                             p.others.forEach(o => {
-                                if (o.thumbnail) o.thumbnail = toOSS(o.thumbnail, 'thumb');
+                                if (o.thumbnail) o.thumbnail = toOSS(o.thumbnail, 'thumb_P');
                                 if (o.display) o.display = toOSS(o.display, 'disp');
                             });
                         }
                     } else if (p.type === 'single') {
-                        if (p.thumbnail) p.thumbnail = toOSS(p.thumbnail, 'thumb');
+                        if (p.thumbnail) p.thumbnail = toOSS(p.thumbnail, 'thumb_L');
                         if (p.display) p.display = toOSS(p.display, 'disp');
                     }
                 });
