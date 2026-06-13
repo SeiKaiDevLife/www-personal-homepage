@@ -103,9 +103,21 @@ createApp({
             window.addEventListener('scroll', handleScroll, { passive: true });
             
             const OSS_DOMAIN = "https://www-seikai.oss-cn-hangzhou.aliyuncs.com/lens/";
-            const toOSS = (url) => {
+            const dpr = window.devicePixelRatio || 1;
+            const screenW = window.innerWidth;
+            const cols = screenW < 768 ? 1 : (screenW < 1024 ? 2 : 3);
+            const thumbW = Math.ceil((screenW / cols) * dpr / 100) * 100;
+            const dispW = Math.ceil(screenW * dpr / 100) * 100;
+
+            const toOSS = (url, type) => {
                 if (!url || url.startsWith('http')) return url;
-                return OSS_DOMAIN + (url.startsWith('/') ? url.slice(1) : url);
+                let fullUrl = OSS_DOMAIN + (url.startsWith('/') ? url.slice(1) : url);
+                if (type === 'thumb') {
+                    return fullUrl + `?x-oss-process=image/resize,w_${thumbW}`;
+                } else if (type === 'disp') {
+                    return fullUrl + `?x-oss-process=image/resize,w_${dispW}`;
+                }
+                return fullUrl;
             };
 
             try {
@@ -115,18 +127,18 @@ createApp({
                 rawPhotos.forEach(p => {
                     if (p.type === 'gallery' && p.layout) {
                         for (let key in p.layout) {
-                            if (p.layout[key].thumbnail) p.layout[key].thumbnail = toOSS(p.layout[key].thumbnail);
-                            if (p.layout[key].display) p.layout[key].display = toOSS(p.layout[key].display);
+                            if (p.layout[key].thumbnail) p.layout[key].thumbnail = toOSS(p.layout[key].thumbnail, 'thumb');
+                            if (p.layout[key].display) p.layout[key].display = toOSS(p.layout[key].display, 'disp');
                         }
                         if (p.others) {
                             p.others.forEach(o => {
-                                if (o.thumbnail) o.thumbnail = toOSS(o.thumbnail);
-                                if (o.display) o.display = toOSS(o.display);
+                                if (o.thumbnail) o.thumbnail = toOSS(o.thumbnail, 'thumb');
+                                if (o.display) o.display = toOSS(o.display, 'disp');
                             });
                         }
                     } else if (p.type === 'single') {
-                        if (p.thumbnail) p.thumbnail = toOSS(p.thumbnail);
-                        if (p.display) p.display = toOSS(p.display);
+                        if (p.thumbnail) p.thumbnail = toOSS(p.thumbnail, 'thumb');
+                        if (p.display) p.display = toOSS(p.display, 'disp');
                     }
                 });
                 photos.value = rawPhotos;
@@ -138,7 +150,7 @@ createApp({
                 const resM = await fetch('data/masterpieces.json?' + new Date().getTime());
                 let rawMasterpieces = await resM.json();
                 rawMasterpieces.forEach(m => {
-                    if (m.url) m.url = toOSS(m.url);
+                    if (m.url) m.url = toOSS(m.url, 'disp');
                 });
                 masterpieces.value = rawMasterpieces;
             } catch(e) {
