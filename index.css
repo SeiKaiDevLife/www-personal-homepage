@@ -642,7 +642,7 @@ main {
 
 /* ================= 器材 (Gear) ================= */
 .gear-page {
-    padding: 50px 5% 0;
+    padding: 100px 5% 0;
     animation: fadeInDown 0.8s ease;
     max-width: 1400px;
     margin: 0 auto;
