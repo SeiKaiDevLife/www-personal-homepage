@@ -26,7 +26,7 @@
         </header>
 
         <!-- 炫酷开屏居中 Logo -->
-        <div class="hero" v-if="currentPage === 'home' && !activeGallery">
+        <div class="hero" v-if="currentPage === 'home' && !activeGallery" :class="{ 'loaded': isHeroLoaded }">
             <div class="hero-avatar">
                 <img :src="dynamicImages.avatar" alt="SeiKai Avatar">
             </div>
@@ -285,7 +285,7 @@
             </div>
         </div>
     </div>
-    <script src="app.js?v=28"></script>
+    <script src="app.js?v=29"></script>
 
     <!-- Sticky Filter Background Unifier -->
     <script>

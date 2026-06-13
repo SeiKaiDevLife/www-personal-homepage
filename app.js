@@ -58,6 +58,7 @@ createApp({
         const masterpieces = ref([]);
         const filter = ref('landscape'); // landscape, portrait
         const currentPage = ref('home'); // home, masterpieces, gear, about
+        const isHeroLoaded = ref(false);
         
         const activeGallery = ref(null);
         const savedScrollY = ref(0); // 记录滚动位置
@@ -124,8 +125,6 @@ createApp({
             
             // 动态加载高清头图 (Blur-Up)
             const loadHighResHero = () => {
-                const heroEl = document.querySelector('.hero');
-                if (!heroEl) return;
                 // 计算实际需要的物理像素宽度，按 100px 向上取整以提高 CDN 命中率，最大不超过 3840
                 let targetWidth = Math.ceil((window.innerWidth * (window.devicePixelRatio || 1)) / 100) * 100;
                 if (targetWidth > 3840) targetWidth = 3840;
@@ -134,12 +133,15 @@ createApp({
                 
                 // 仅当 URL 改变时才去重新加载
                 const currentUrl = document.documentElement.style.getPropertyValue('--hero-bg-highres');
-                if (currentUrl.includes(highResUrl)) return;
+                if (currentUrl.includes(highResUrl)) {
+                    isHeroLoaded.value = true;
+                    return;
+                }
                 
                 const img = new Image();
                 img.onload = () => {
                     document.documentElement.style.setProperty('--hero-bg-highres', `url('${highResUrl}')`);
-                    heroEl.classList.add('loaded');
+                    isHeroLoaded.value = true;
                 };
                 img.src = highResUrl;
             };
@@ -392,6 +394,7 @@ createApp({
             dynamicImages,
             filter,
             currentPage,
+            isHeroLoaded,
             isScrolled,
             activeGallery, 
             openGallery, 
