@@ -735,7 +735,11 @@ main {
 .gear-list li:hover::before {
     background: #fff;
 }
-/* Removed gear-page mobile override */
+@media (max-width: 768px) {
+    .gear-page {
+        padding: 80px 5% 0;
+    }
+}
 
 /* ================= 代表作 (Masterpieces) ================= */
 .masterpieces-page {
