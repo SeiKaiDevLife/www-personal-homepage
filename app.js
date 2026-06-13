@@ -174,15 +174,8 @@ createApp({
             savedScrollY.value = window.scrollY; // 记录当前滚动位置
             activeGallery.value = item;
             
-            // 等待 DOM 渲染出 dedicated-gallery 后再滚动
             nextTick(() => {
-                const galleryEl = document.querySelector('.dedicated-gallery');
-                if (galleryEl) {
-                    const y = galleryEl.getBoundingClientRect().top + window.scrollY;
-                    window.scrollTo({ top: y - 20, behavior: 'smooth' });
-                } else {
-                    window.scrollTo(0, 0);
-                }
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         };
 
