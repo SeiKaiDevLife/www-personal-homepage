@@ -110,7 +110,7 @@ body, html {
     -webkit-backdrop-filter: blur(15px);
     z-index: 50;
     pointer-events: none;
-    transition: height 0.3s ease, opacity 0.3s ease, background 0.3s ease;
+    transition: opacity 0.3s ease, background 0.3s ease;
 }
 body.filter-sticky .global-blur-bg {
     height: calc(clamp(50px, 5vw, 60px) + var(--filter-height, 58px));
@@ -416,6 +416,7 @@ main {
     backdrop-filter: blur(10px);
     padding: 15px 5%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 15px;
     transition: color 0.3s;
     box-sizing: border-box;
 }
