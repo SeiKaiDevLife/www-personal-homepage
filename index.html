@@ -28,7 +28,7 @@
         <!-- 炫酷开屏居中 Logo -->
         <div class="hero" v-if="currentPage === 'home' && !activeGallery">
             <div class="hero-avatar">
-                <img src="https://www-seikai.oss-cn-hangzhou.aliyuncs.com/lens/public/avatar.webp?x-oss-process=image/resize,w_400" alt="SeiKai Avatar">
+                <img :src="dynamicImages.avatar" alt="SeiKai Avatar">
             </div>
             <p class="hero-subtitle">Photography Collection</p>
         </div>
@@ -232,7 +232,7 @@
             <!-- 关于我页面 -->
             <div class="about-page" v-else-if="currentPage === 'about'">
                 <div class="about-container">
-                    <img src="https://www-seikai.oss-cn-hangzhou.aliyuncs.com/lens/public/about_me.webp?x-oss-process=image/resize,w_800" alt="Life Photo" class="about-photo">
+                    <img :src="dynamicImages.aboutMe" alt="Life Photo" class="about-photo">
                     <h2 class="about-tag">业余摄影爱好者</h2>
                     <h3 class="about-style">城市、风光、人像</h3>
                     <p class="about-desc">
@@ -247,7 +247,7 @@
 
         <footer class="site-footer">
             <div class="footer-logo-container">
-                <img src="https://www-seikai.oss-cn-hangzhou.aliyuncs.com/lens/public/logo.png" class="footer-logo" alt="SeiKai Logo">
+                <img :src="dynamicImages.logo" class="footer-logo" alt="SeiKai Logo">
             </div>
             <div class="footer-content">
                 <div class="footer-info">
@@ -257,11 +257,11 @@
                 </div>
                 <div class="footer-qrcodes">
                     <div class="footer-qrcode">
-                        <img src="https://www-seikai.oss-cn-hangzhou.aliyuncs.com/lens/public/qrcode.webp?x-oss-process=image/resize,w_400" alt="公众号: 栅格影像" loading="lazy">
+                        <img :src="dynamicImages.qrcode" alt="公众号: 栅格影像" loading="lazy">
                         <p>扫码关注公众号</p>
                     </div>
                     <div class="footer-qrcode">
-                        <img src="https://www-seikai.oss-cn-hangzhou.aliyuncs.com/lens/public/xiaohongshu-qrcode.webp?x-oss-process=image/resize,w_400" alt="小红书" loading="lazy">
+                        <img :src="dynamicImages.xiaohongshu" alt="小红书" loading="lazy">
                         <p>扫码关注小红书</p>
                     </div>
                 </div>
@@ -285,7 +285,7 @@
             </div>
         </div>
     </div>
-    <script src="app.js?v=25"></script>
+    <script src="app.js?v=26"></script>
 
     <!-- Sticky Filter Background Unifier -->
     <script>
