@@ -35,10 +35,12 @@ body, html {
     position: absolute;
     inset: 0;
     z-index: -2;
-    background-image: url('https://www-seikai.oss-cn-hangzhou.aliyuncs.com/lens/public/hero-bg.webp');
+    background-image: url('https://www-seikai.oss-cn-hangzhou.aliyuncs.com/lens/public/hero-bg-tiny.webp');
     background-size: cover;
     background-position: center calc(30% + var(--parallax-y, 0px));
     background-repeat: no-repeat;
+    filter: blur(10px);
+    transform: scale(1.05);
 
     -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
@@ -48,9 +50,18 @@ body, html {
     position: absolute;
     inset: 0;
     z-index: -1;
-    /* 恢复 mask-image 技术，这样它可以透明过渡到任何底图，而不是死板地过渡到纯黑色 */
-    background: transparent;
+    background-image: var(--hero-bg-highres);
+    background-size: cover;
+    background-position: center calc(30% + var(--parallax-y, 0px));
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
     pointer-events: none;
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+.hero.loaded::after {
+    opacity: 1;
 }
 .hero-avatar {
     width: clamp(60px, 11.666vw, 140px);

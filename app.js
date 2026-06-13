@@ -69,7 +69,37 @@ createApp({
 
         onMounted(async () => {
             updateColCount();
-            window.addEventListener('resize', updateColCount);
+            
+            // 动态加载高清头图 (Blur-Up)
+            const loadHighResHero = () => {
+                const heroEl = document.querySelector('.hero');
+                if (!heroEl) return;
+                // 计算实际需要的物理像素宽度，按 100px 向上取整以提高 CDN 命中率，最大不超过 3840
+                let targetWidth = Math.ceil((window.innerWidth * (window.devicePixelRatio || 1)) / 100) * 100;
+                if (targetWidth > 3840) targetWidth = 3840;
+                
+                const highResUrl = `https://www-seikai.oss-cn-hangzhou.aliyuncs.com/lens/public/hero-bg-4k.webp?x-oss-process=image/resize,w_${targetWidth}`;
+                
+                // 仅当 URL 改变时才去重新加载
+                const currentUrl = document.documentElement.style.getPropertyValue('--hero-bg-highres');
+                if (currentUrl.includes(highResUrl)) return;
+                
+                const img = new Image();
+                img.onload = () => {
+                    document.documentElement.style.setProperty('--hero-bg-highres', `url('${highResUrl}')`);
+                    heroEl.classList.add('loaded');
+                };
+                img.src = highResUrl;
+            };
+            
+            setTimeout(loadHighResHero, 100);
+
+            let resizeTimer;
+            window.addEventListener('resize', () => {
+                updateColCount();
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(loadHighResHero, 500);
+            });
             window.addEventListener('scroll', handleScroll, { passive: true });
             
             const OSS_DOMAIN = "https://www-seikai.oss-cn-hangzhou.aliyuncs.com/lens/";
