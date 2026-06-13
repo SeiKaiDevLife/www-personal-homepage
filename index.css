@@ -64,8 +64,8 @@ body, html {
     opacity: 1;
 }
 .hero-avatar {
-    width: clamp(60px, 11.666vw, 140px);
-    height: clamp(60px, 11.666vw, 140px);
+    width: clamp(60px, 11.666vw, 210px);
+    height: clamp(60px, 11.666vw, 210px);
     margin-bottom: clamp(12px, 2vw, 24px);
     border-radius: 50%;
     overflow: hidden;
@@ -99,8 +99,8 @@ body, html {
     flex-shrink: 0;
 }
 .hero-subtitle {
-    font-size: clamp(8px, 0.916vw, 14px);
-    letter-spacing: clamp(4px, 0.666vw, 8px);
+    font-size: clamp(8px, 0.916vw, 21px);
+    letter-spacing: clamp(4px, 0.666vw, 12px);
     color: #eee;
     text-transform: uppercase;
     font-weight: 300;
