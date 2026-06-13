@@ -33,11 +33,12 @@ def process_image_file(source_path, target_dir, yy_mm, folder_name, new_filename
             
             os.remove(source_path)
             
+            aspect_ratio = round(img.width / img.height, 4)
             rel_path = f"public/gallery/landscape/{yy_mm}/{folder_name}/{webp_filename}"
-            return rel_path, rel_path
+            return rel_path, rel_path, aspect_ratio
     except Exception as e:
         print(f"处理出错 {source_path}: {e}")
-        return None, None
+        return None, None, None
 
 def main():
     print("开始执行 [风景照 L] 自动化处理脚本...")
@@ -80,7 +81,7 @@ def main():
         new_fname = str(idx)
         print(f"正在处理风景照: {fname} -> 重命名为 {new_fname}.webp")
         
-        thumb, disp = process_image_file(source_path, target_dir, yy_mm, folder_name, new_fname)
+        thumb, disp, aspect_ratio = process_image_file(source_path, target_dir, yy_mm, folder_name, new_fname)
         if thumb and disp:
             entry_id = f"land-{date_str}-{location}-{new_fname}"
             new_entry = {
@@ -90,7 +91,8 @@ def main():
                 "location": location,
                 "category": "L",
                 "thumbnail": thumb,
-                "display": disp
+                "display": disp,
+                "aspectRatio": aspect_ratio
             }
             local_entries.append(new_entry)
             processed_count += 1
