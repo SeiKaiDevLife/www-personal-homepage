@@ -21,12 +21,13 @@ createApp({
                 else if (screenW < 1024) targetHeight = 220;
                 
                 const reqH = Math.ceil(targetHeight * r / 100) * 100;
-                return fullUrl + `?x-oss-process=image/resize,h_${reqH}`;
+                const reqW = Math.ceil(screenW * r / 100) * 100;
+                return fullUrl + `?x-oss-process=image/resize,m_lfit,w_${reqW},h_${reqH}`;
             } else if (type === 'thumb_P') {
                 const cols = screenW < 768 ? 1 : (screenW < 1024 ? 2 : 3);
                 let cellW = screenW < 900 ? screenW / cols : 300;
                 const thumbW = Math.ceil((cellW * 2) * r / 100) * 100;
-                return fullUrl + `?x-oss-process=image/resize,m_mfit,w_${thumbW},h_${thumbW}`;
+                return fullUrl + `?x-oss-process=image/resize,m_fill,w_${thumbW},h_${thumbW}`;
             } else if (type === 'disp') {
                 const screenH = winH.value;
                 const dispW = Math.ceil(screenW * r / 100) * 100;
