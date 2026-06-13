@@ -1,52 +1,25 @@
 [
     {
-        "id": 12,
-        "url": "public/gallery/masterpiece/12.webp",
-        "aspectRatio": 1.5,
-        "date": "2024-03-12",
-        "location": "杭州西湖",
-        "shooting_idea": "等待行人坐在椅子上，使用广角进行拍摄，保持阳光穿透树叶的质感",
-        "post_idea": "使用灯光工厂进行光晕制作，保证阳关的光感"
+        "id": 25,
+        "url": "public/gallery/masterpiece/25.webp",
+        "aspectRatio": 0.6593,
+        "date": "2020-10-01",
+        "location": "杭州良渚",
+        "shooting_idea": "低角度拍摄，使用大广角进行空间感的塑造",
+        "post_idea": "增强图片中的线条感和几何感"
     },
     {
-        "id": 11,
-        "url": "public/gallery/masterpiece/11.webp",
-        "aspectRatio": 1.5,
-        "date": "2025-08-23",
-        "location": "杭州九莱福",
-        "shooting_idea": "寻找合适角度使用广角进行拍摄，保持建筑物的立体感",
-        "post_idea": "保留暗部细节的同时尽可能增加对比"
-    },
-    {
-        "id": 10,
-        "url": "public/gallery/masterpiece/10.webp",
-        "aspectRatio": 0.6667,
-        "date": "2022-05-01",
-        "location": "杭州望仙阁",
-        "shooting_idea": "俯视视角拍摄，将古城与高速公路一同拍摄入镜，分别采用低iso长曝光，和高iso短曝光拍摄两张照片供后期合成",
-        "post_idea": "将两张照片分别进行调色、色彩统一，然后将短曝光的人物制作到长曝光照片上"
-    },
-    {
-        "id": 9,
-        "url": "public/gallery/masterpiece/9.webp",
+        "id": 24,
+        "url": "public/gallery/masterpiece/24.webp",
         "aspectRatio": 4.2188,
         "date": "2019-08-13",
         "location": "上海外滩",
-        "shooting_idea": "早上赶在游客增多和太阳升起之前到外滩，拍摄日出的时刻，使用中焦段拍摄多个角度供后期堆栈",
+        "shooting_idea": "早上赶在游客增多和太阳升起之前到外滩，拍摄日出时刻，使用中焦段拍摄多个角度供后期堆栈",
         "post_idea": "将色调进行统一，形成日出时候的感觉"
     },
     {
-        "id": 8,
-        "url": "public/gallery/masterpiece/8.webp",
-        "aspectRatio": 1.4362,
-        "date": "2021-03-21",
-        "location": "浙大实验动物中心",
-        "shooting_idea": "建筑外部的窗户很有几何感",
-        "post_idea": "挑选干净的窗户替换所有窗户，使用高低频分离去除墙面污渍，然后使用图层混合模式叠加一层粉蓝色主色调防止单调"
-    },
-    {
-        "id": 7,
-        "url": "public/gallery/masterpiece/7.webp",
+        "id": 23,
+        "url": "public/gallery/masterpiece/23.webp",
         "aspectRatio": 0.6667,
         "date": "2020-12-18",
         "location": "杭州晓霞弄",
@@ -54,8 +27,35 @@
         "post_idea": "增加颜色对比，将路灯颜色修改为和常亮灯颜色形成对比色的蓝色，然后塑造整体照片阴影部分，增加质感"
     },
     {
-        "id": 6,
-        "url": "public/gallery/masterpiece/6.webp",
+        "id": 22,
+        "url": "public/gallery/masterpiece/22.webp",
+        "aspectRatio": 1.4362,
+        "date": "2021-03-21",
+        "location": "浙大实验动物中心",
+        "shooting_idea": "浙大实验动物中心",
+        "post_idea": "挑选干净的窗户替换所有窗户，使用高低频分离去除墙面污渍，然后使用图层混合模式叠加一层粉蓝色主色调防止单调"
+    },
+    {
+        "id": 21,
+        "url": "public/gallery/masterpiece/21.webp",
+        "aspectRatio": 0.637,
+        "date": "2021-10-28",
+        "location": "浙江大学玉泉校区",
+        "shooting_idea": "这是浙大学生上学的主干道，人流比较密集，因此五点半起床趁着天还没亮就去拍摄，使用三脚架+150mm左右的长焦拍出空间压缩感，让树叶显得更加密集，同时借用植物遮挡掉路边一些杂乱的物体",
+        "post_idea": "由于时间比较早，阳光并不是很灿烂，因此手动绘制了树叶间的光影，增强了中心区域的光感，压下照片边缘区域漏光的地方。进一步去除拍摄时未去除的一些杂乱的物体，突出人物与环境之间的对比"
+    },
+    {
+        "id": 20,
+        "url": "public/gallery/masterpiece/20.webp",
+        "aspectRatio": 0.6667,
+        "date": "2022-05-01",
+        "location": "杭州望仙阁",
+        "shooting_idea": "俯视视角拍摄，将古城与高速公路一同拍摄入镜，分别采用低iso长曝光，和高iso短曝光拍摄两张照片供后期合成",
+        "post_idea": "将两张照片分别进行调色、色彩统一，然后将短曝光的人物制作到长曝光照片上"
+    },
+    {
+        "id": 19,
+        "url": "public/gallery/masterpiece/19.webp",
         "aspectRatio": 0.6296,
         "date": "2023-07-13",
         "location": "阳朔大面山",
@@ -63,8 +63,8 @@
         "post_idea": "采用渐变+图层混合模式的方式，营造阳光的光晕感，增加整体照片质感"
     },
     {
-        "id": 5,
-        "url": "public/gallery/masterpiece/5.webp",
+        "id": 18,
+        "url": "public/gallery/masterpiece/18.webp",
         "aspectRatio": 0.6667,
         "date": "2023-09-08",
         "location": "杭州人寿大厦",
@@ -72,8 +72,8 @@
         "post_idea": "找一扇干净的窗户，把所有窗户都替换掉，然后采用高低频分离的方式配合画笔工具，将墙上的污渍全部去除，保持干净的线条，让画面看起来又真实又虚假"
     },
     {
-        "id": 4,
-        "url": "public/gallery/masterpiece/4.webp",
+        "id": 17,
+        "url": "public/gallery/masterpiece/17.webp",
         "aspectRatio": 0.6667,
         "date": "2023-11-29",
         "location": "杭州彭埠大桥",
@@ -81,8 +81,8 @@
         "post_idea": "将不同时间的有特点的车辆制作到同一张照片中，进行合成即可"
     },
     {
-        "id": 3,
-        "url": "public/gallery/masterpiece/3.webp",
+        "id": 16,
+        "url": "public/gallery/masterpiece/16.webp",
         "aspectRatio": 1.5,
         "date": "2024-01-25",
         "location": "上海外滩",
@@ -90,21 +90,30 @@
         "post_idea": "做几何校正，让建筑物竖直，将颜色调整干净，尽量突出线条与大块色彩"
     },
     {
-        "id": 2,
-        "url": "public/gallery/masterpiece/2.webp",
+        "id": 15,
+        "url": "public/gallery/masterpiece/15.webp",
+        "aspectRatio": 1.5,
+        "date": "2024-03-12",
+        "location": "杭州西湖",
+        "shooting_idea": "等待行人坐在椅子上，使用广角进行拍摄，保持阳光穿透树叶的质感",
+        "post_idea": "等待行人坐在椅子上，使用广角进行拍摄，保持阳光穿透树叶的质感"
+    },
+    {
+        "id": 14,
+        "url": "public/gallery/masterpiece/14.webp",
         "aspectRatio": 0.6667,
         "date": "2024-10-22",
         "location": "天津西开总堂",
         "shooting_idea": "上午前往教堂，专门拍摄光影洒落在柱子上的时刻，这个场景维持时间较短，一天大概只有半个小时左右",
-        "post_idea": "增强色彩质感，稍微压低教堂内部的颜色，将视觉中心集中在柱子上的光影"
+        "post_idea": "上午前往教堂，专门拍摄光影洒落在柱子上的时刻，这个场景维持时间较短，一天大概只有半个小时左右"
     },
     {
-        "id": 1,
-        "url": "public/gallery/masterpiece/1.webp",
-        "aspectRatio": 0.637,
-        "date": "2021-10-28",
-        "location": "浙江大学玉泉校区",
-        "shooting_idea": "这是浙大学生上学的主干道，人流比较密集，因此五点半起床趁着天还没亮就去拍摄，使用三脚架+150mm左右的长焦拍出空间压缩感，让树叶显得更加密集，同时借用植物遮挡掉路边一些杂乱的物体",
-        "post_idea": "由于时间比较早，阳光并不是很灿烂，因此手动绘制了树叶间的光影，增强了中心区域的光感，压下照片边缘区域漏光的地方。进一步去除拍摄时未去除的一些杂乱的物体，突出人物与环境之间的对比"
+        "id": 13,
+        "url": "public/gallery/masterpiece/13.webp",
+        "aspectRatio": 1.5,
+        "date": "2025-08-23",
+        "location": "杭州九莱福",
+        "shooting_idea": "寻找合适角度使用广角进行拍摄，保持建筑物的立体感",
+        "post_idea": "寻找合适角度使用广角进行拍摄，保持建筑物的立体感"
     }
 ]
