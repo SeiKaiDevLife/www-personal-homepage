@@ -5,6 +5,7 @@ createApp({
         const OSS_DOMAIN = "https://www-seikai.oss-cn-hangzhou.aliyuncs.com/lens/";
         const dpr = ref(window.devicePixelRatio || 1);
         const winW = ref(window.innerWidth);
+        const winH = ref(window.innerHeight);
 
         const toOSS = (url, type) => {
             if (!url || url.startsWith('http')) return url;
@@ -27,8 +28,10 @@ createApp({
                 const thumbW = Math.ceil((cellW * 2) * r / 100) * 100;
                 return fullUrl + `?x-oss-process=image/resize,m_mfit,w_${thumbW},h_${thumbW}`;
             } else if (type === 'disp') {
+                const screenH = winH.value;
                 const dispW = Math.ceil(screenW * r / 100) * 100;
-                return fullUrl + `?x-oss-process=image/resize,w_${dispW}`;
+                const dispH = Math.ceil(screenH * r / 100) * 100;
+                return fullUrl + `?x-oss-process=image/resize,m_lfit,w_${dispW},h_${dispH}`;
             }
             return fullUrl;
         };
@@ -151,6 +154,7 @@ createApp({
             let resizeTimer;
             window.addEventListener('resize', () => {
                 winW.value = window.innerWidth;
+                winH.value = window.innerHeight;
                 dpr.value = window.devicePixelRatio || 1;
                 updateColCount();
                 clearTimeout(resizeTimer);
